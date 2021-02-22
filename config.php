@@ -1,4 +1,4 @@
 <?php
-  $pdo = new PDO('mysql:host=127.0.0.1;port=3306;dbname=cs','root','Kiln@2020');
+  $pdo = new PDO('mysql:host=remotemysql.com;port=3306;dbname=uL2t6YCDk2','uL2t6YCDk2','JqCVOBrax4');
   $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
 ?>
