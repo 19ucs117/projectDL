@@ -55,7 +55,7 @@ if(isset($_POST['sub'])){
   }
 }
 if(isset($_POST['fsubmit'])) {
-  $folder ="upload/";
+  $folder ="./upload/";
   $image = $_FILES['fileToUpload']['name'];
   $path = $folder.$image ;
   $target_file = $folder.basename($_FILES["fileToUpload"]["name"]);
