@@ -29,7 +29,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     <link rel="shortcut icon" type="image/x-icon" href="https://iqac.loyolacollege.edu/academic/assets/img/favicon.png">
     <title>Loyola Digital Library</title>
     <script type="text/javascript" src="gs://projectdl-2c51c.appspot.com"></script>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_page.css">
     <a href="#">
       <img src="loyola_icon.png" alt="hpage">
     </a>
