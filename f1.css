@@ -1,0 +1,146 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Verdana;
+
+}
+
+input{
+  width: 90%;
+  border:1px solid gold;
+  border-radius:5px;
+  height:30px;
+  margin:1%;
+  display: inline-block;
+}
+.captionh{
+  letter-spacing:px;
+  width:100%;
+  padding:8px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+#subs{
+  width: 36%
+}
+#subt{
+  width: 13%;
+}
+#subu{
+  width: 40%
+}
+select{
+  width:90%;
+  border:1px solid gold;
+  border-radius:5px;
+  height:30px;
+  margin:1%;
+}
+span{
+  color: red;
+  font-size: 15px;
+}
+
+#submitButton{
+  margin-left: 200%;
+  margin-top: 5%;
+}
+#resetButton{
+  margin-top: 2%;
+  margin-left: 230%;
+}
+.add{
+  width:20%;
+  background:gold;
+  padding:5px;
+  color:#000;
+  border:none;
+  margin:1%;
+  font-weight:bold;
+}
+.submit,.clear{
+  width:100px;
+  background:gold;
+  margin-left: 10%;
+  color:#000;
+  position:relative;
+  border:none;
+  font-weight:bold;
+}
+
+caption{
+  color: black;
+  padding: 2%;
+  font-size: 20px;
+  font-weight: 900;
+}
+#colomn{
+  display: table-column-group;
+}
+}
+td{
+  color:black;
+  padding: 2%;
+  border: none;
+}
+th{
+  text-align: left;
+  color:black;
+  font: Verdana;
+  position: relative;
+  padding: 1%;
+  font-weight: 550;
+
+  border: none;
+}
+table{
+  width: max-content;
+  border-collapse: collapse;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  align: center;
+  margin-left: 5%;
+}
+.heading{
+  letter-spacing:5px;
+  width:100%;
+  padding:8px;
+  color: gold;
+}
+a{
+
+}
+
+@media(max-width:499px){
+  input{
+    width:100%;
+  }
+  .captionh{
+
+    width:100%;
+    padding:6px;
+    
+    font-weight:900;
+  }
+  #submitButton{
+    margin-left: 10%;
+    margin-top: 5%;
+ }
+ table{
+   width: max-content;
+   border-collapse: collapse;
+   align-self: center;
+   align-content: center;
+   align-items: center;
+   align: center;
+   margin-left: 5%;
+ }
+ select{
+    width:-webkit-fill-available;
+  }
+}

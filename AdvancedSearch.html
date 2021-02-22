@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="templates.css">
+  </head>
+  <body>
+  <div class="body">
+    <center>
+    <form method="post" name="f1" Action="DigitalSearchResult.asp"   onsubmit="return validate()">
+      <table align="center">
+        <caption>Advanced Search</caption>
+        <tr>
+          <th>String </th>
+          <td align="center" width="5px">:</td>
+          <td>
+            <input type=text name="strname">
+          </td>
+        </tr>
+        <tr>
+            <th>Field </th>
+            <td align="center" width="5px">:</td>
+            <td>
+              <select name="field2">
+                <option value"no" >-Select-</option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Domain-Type </th>
+            <td align="center" width="5px">:</td>
+            <td>
+              <select name="Domain">
+                <option value="1">---Domain----- </option>
+              </select>
+            </td>
+        </tr>
+        <tr>
+            <th>Collection </th>
+            <td align="center" width="5px">:</td>
+            <td>
+              <select name="field1">
+                <option value="2">---Collection--- </option>
+              </select>
+            </td>
+        </tr>
+        <tr align="center">
+          <td style="cellPadding: 50%; padding:10%; " >
+              <input type="submit" value="Submit" class="submit">
+          </td>
+          <td align="center" width="5px"></td>
+          <td style="cellPadding: 50%">
+            <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+  </body>
+</html>

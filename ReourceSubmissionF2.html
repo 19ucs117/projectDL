@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <FORM METHOD="POST" ACTION="digitalresult.asp" NAME="digital" onsubmit="return validate()" >
+      <INPUT TYPE="hidden" NAME="flag">
+        <table border="0" width="96%" height="26">
+          <tr>
+            <td width="22%" height="22"></td>
+          </tr>
+        </table>
+      <p class=c>&nbsp;</p><div align="center" style="width: 883; height: 381">
+      <table border="0" width="749" height="268" style="border-style: solid; border-width: 2" bordercolorlight="#000000" bordercolor="#FFFFFF" >
+      <tr>
+        <td width="191" height="34" bgcolor="#EFEFEF" align="left">
+        <b><font face="Verdana" size="1">Domain</font><font color="#FF0000" face="Verdana" size="1">*</font></b><TD WIDTH="92" HEIGHT="28" bgcolor="#EFEFEF" >
+                <p align="left"><b><font face="Verdana" size="1"><SELECT SIZE="1" width="250" style="width: 176; height: 23" NAME='dept' id='dept_new' onChange ="collection()">
+                <OPTION VALUE="NO" SELECTED>                                              </OPTION>
+
+                 <option value="000 computers,information,general reference">000 computers,information,general reference </option>
+
+                 <option value="100 philosophy,psychology">100 philosophy,psychology </option>
+
+                 <option value="200 religion">200 religion </option>
+
+                 <option value="300 Social sciences, sociology and anthropology">300 Social sciences, sociology and anthropology </option>
+
+                 <option value="400 language">400 language </option>
+
+                 <option value="500 Natural Sciences and Mathematics">500 Natural Sciences and Mathematics </option>
+
+                 <option value="600 technology">600 technology </option>
+
+                 <option value="700 arts fine and decorative arts">700 arts fine and decorative arts </option>
+
+                 <option value="800 Literature and rhetoric">800 Literature and rhetoric </option>
+
+                 <option value="900 History and geography">900 History and geography </option>
+
+                 <option value="010 Bibliographies">010 Bibliographies </option>
+
+                 <option value="020 Library and information sciences">020 Library and information sciences </option>
+
+                 <option value="030 Encyclopedias and books of facts">030 Encyclopedias and books of facts </option>
+
+                 <option value="050 Magazines, journals and serials">050 Magazines, journals and serials </option>
+
+                 <option value="060 Associations, organizations and museums">060 Associations, organizations and museums </option>
+
+                 <option value="070 News media, journalism and publishing">070 News media, journalism and publishing </option>
+
+                 <option value="080 Quotations">080 Quotations </option>
+
+                 <option value="090 Manuscripts and rare books">090 Manuscripts and rare books </option>
+
+                 <option value="110 Metaphysics">110 Metaphysics </option>
+
+                 <option value="120 Epistemology">120 Epistemology </option>
+
+                 <option value="130 Parapsychology and occultism">130 Parapsychology and occultism </option>
+
+                 <option value="140 Philosophical schools of thought">140 Philosophical schools of thought </option>
+
+                 <option value="150 Psychology">150 Psychology </option>
+
+                 <option value="160 Logic">160 Logic </option>
+
+                 <option value="170 Ethics">170 Ethics </option>
+
+                 <option value="180 Ancient, medieval and eastern philosophy">180 Ancient, medieval and eastern philosophy </option>
+
+                 <option value="190 Modern western philosophy">190 Modern western philosophy </option>
+
+                 <option value="210 Philosophy and theory of religion">210 Philosophy and theory of religion </option>
+
+                 <option value="220 Bible">220 Bible </option>
+
+                 <option value="230 Christianity and Christian theology">230 Christianity and Christian theology </option>
+
+                 <option value="240 Christian practice and observance">240 Christian practice and observance </option>
+
+                 <option value="250 Christian pastoral practice and religious orders">250 Christian pastoral practice and religious orders </option>
+
+                 <option value="310 Statistics">310 Statistics </option>
+
+                 <option value="320 Political science">320 Political science </option>
+
+                 <option value="330 Economics">330 Economics </option>
+
+                 <option value="340 Law">340 Law </option>
+
+                 <option value="350 Public administration and military science">350 Public administration and military science </option>
+
+                 <option value="760 Graphic arts">760 Graphic arts </option>
+
+                 <option value="770 Photography and computer art">770 Photography and computer art </option>
+
+                 <option value="780 Music">780 Music </option>
+
+                 <option value="790 Sports, games and entertainment">790 Sports, games and entertainment </option>
+
+                 <option value="810 American literature in English">810 American literature in English </option>
+
+                 <option value="820 English and old English Literature">820 English and old English Literature </option>
+
+                 <option value="830 German and related literatures">830 German and related literatures </option>
+
+                 <option value="840 French and related literatures">840 French and related literatures </option>
+
+                 <option value="850 Italian, Romanian and related literatures">850 Italian, Romanian and related literatures </option>
+
+                 <option value="860 Spanish and Portuguese literatures">860 Spanish and Portuguese literatures </option>
+
+                 <option value="870 Latin and Italic literatures">870 Latin and Italic literatures </option>
+
+                 <option value="880 Classical and modern Greek literatures">880 Classical and modern Greek literatures </option>
+
+                 <option value="890 Other literatures">890 Other literatures </option>
+
+                 <option value="910 Geography and travel">910 Geography and travel </option>
+
+                 <option value="920 Biography and genealogy">920 Biography and genealogy </option>
+
+                 <option value="930 History of ancient world (to ca. 499)">930 History of ancient world (to ca. 499) </option>
+
+                 <option value="950 History of Asia">950 History of Asia </option>
+
+                 <option value="960 History of Africa">960 History of Africa </option>
+
+                 <option value="970 History of North America">970 History of North America </option>
+
+                 <option value="980 History of South America">980 History of South America </option>
+
+                 <option value="990 History of other areas">990 History of other areas </option>
+
+                 <option value="260 Christian organization, social work and worship">260 Christian organization, social work and worship </option>
+
+                 <option value="270 History of Christianity">270 History of Christianity </option>
+
+                 <option value="280 Christian denominations">280 Christian denominations </option>
+
+                 <option value="290 Other religions">290 Other religions </option>
+
+                 <option value="360 Social problems and social services">360 Social problems and social services </option>
+
+                 <option value="370 Education">370 Education </option>
+
+                 <option value="380 Commerce, communications and transportation">380 Commerce, communications and transportation </option>
+
+                 <option value="390 Customs, etiquette and folklore">390 Customs, etiquette and folklore </option>
+
+                 <option value="410 Linguistics">410 Linguistics </option>
+
+                 <option value="420 English and Old English languages">420 English and Old English languages </option>
+
+                 <option value="430 German and related languages">430 German and related languages </option>
+
+                 <option value="440 French and related languages">440 French and related languages </option>
+
+                 <option value="450 Italian, Romanian and related languages">450 Italian, Romanian and related languages </option>
+
+                 <option value="460 Spanish and Portuguese languages">460 Spanish and Portuguese languages </option>
+
+                 <option value="470 Latin and Italic languages">470 Latin and Italic languages </option>
+
+                 <option value="480 Classical and modern Greek languages">480 Classical and modern Greek languages </option>
+
+                 <option value="490 Other languages">490 Other languages </option>
+
+                 <option value="510 Mathematics">510 Mathematics </option>
+
+                 <option value="520 Astronomy">520 Astronomy </option>
+
+                 <option value="530 Physics">530 Physics </option>
+
+                 <option value="540 Chemistry">540 Chemistry </option>
+
+                 <option value="550 Earth sciences and geology">550 Earth sciences and geology </option>
+
+                 <option value="560 Fossils and prehistoric life">560 Fossils and prehistoric life </option>
+
+                 <option value="570 Life sciences; biology">570 Life sciences; biology </option>
+
+                 <option value="580 Plants (Botany)">580 Plants (Botany) </option>
+
+                 <option value="590 Animals (Zoology)">590 Animals (Zoology) </option>
+
+                 <option value="610 Medicine and health">610 Medicine and health </option>
+
+                 <option value="620 Engineering">620 Engineering </option>
+
+                 <option value="630 Agriculture">630 Agriculture </option>
+
+                 <option value="640 Home and family management">640 Home and family management </option>
+
+                 <option value="650 Management and public relations">650 Management and public relations </option>
+
+                 <option value="660 Chemical engineering">660 Chemical engineering </option>
+
+                 <option value="670 Manufacturing">670 Manufacturing </option>
+
+                 <option value="680 Manufacture for specific uses">680 Manufacture for specific uses </option>
+
+                 <option value="690 Building and construction">690 Building and construction </option>
+
+                 <option value="710 Landscaping and area planning">710 Landscaping and area planning </option>
+
+                 <option value="720 Architecture">720 Architecture </option>
+
+                 <option value="730 Sculpture, ceramics and metalwork">730 Sculpture, ceramics and metalwork </option>
+
+                 <option value="740 Drawing and decorative arts">740 Drawing and decorative arts </option>
+
+                 <option value="750 Painting">750 Painting </option>
+
+                 <option value="940 History of Europe">940 History of Europe </option>
+
+
+
+              </select></font></b>
+
+                </p>
+              </TD>
+
+
+
+    </tr>
+
+
+
+    <tr>
+      <td width="191" height="34" bgcolor="#FFFFFF" align="left">
+        <b><font face="Verdana" size="1">Collection&nbsp;</font><font color="#FF0000">*</font></b></td>
+      <td width="540" bgcolor="#FFFFFF" align="left" height="34">
+        <b><SELECT SIZE="1" NAME="Subject" width="250" style="width: 176; height: 23" >
+                <OPTION SELECTED >             </OPTION>
+
+                    <option>003 Systems</option><option>011 Bibliographies</option><option>016 Bibliographies of works on specific subjects</option><option>018 Catalogs arranged by author, date, etc.</option><option>025 Library operations</option><option>027 General libraries</option><option>032 Encyclopedias in English</option><option>035 In Italian, Romanian & related languages</option><option>037 Encyclopedias in Slavic languages</option><option>038 Encyclopedias in Scandinavian languages</option><option>052 Serials in English</option><option>053 Serials in other Germanic languages</option><option>057 Serials in Slavic languages</option><option>058 Serials in Scandinavian languages</option><option>071 Newspapers in North America</option><option>074 Newspapers in France & Monaco</option><option>082 Collections in English</option><option>084 Collections in French, Occitan & Catalan</option><option>086 Collections in Spanish & Portuguese</option><option>088 Collections in Scandinavian languages</option><option>090 Manuscripts & rare books</option><option>101 Theory of philosophy</option><option>102 Miscellany</option><option>106 Organizations & management</option><option>107 Education, research & related topics</option><option>108 Kinds of persons treatment</option><option>111 Ontology</option><option>127 The unconscious & the subconscious</option><option>129 Origin & destiny of individual souls</option><option>130 Parapsychology & occultism</option><option>131 Parapsychological & occult methods</option><option>133 Specific topics in parapsychology & occultism</option><option>135 Dreams & mysteries</option><option>137 Divinatory graphology</option><option>138 Physiognomy</option><option>139 Phrenology</option><option>004 Data processing & computer science</option><option>005 Computer programming, programs & data</option><option>010 Bibliography</option><option>012 Bibliographies of individuals</option><option>017 General subject catalogs</option><option>023 Personnel management</option><option>026 Libraries for specific subjects</option><option>028 Reading & use of other information media</option><option>062 Organizations in British Isles; in England</option><option>063 Organizations in central Europe; in Germany</option><option>064 Organizations in France & Monaco</option><option>067 Organizations in eastern Europe; in Russia</option><option>068 Organizations in other geographic areas</option><option>072 Newspapers in British Isles; in England</option><option>075 Newspapers in Italy & adjacent islands</option><option>076 In Iberian Peninsula & adjacent islands</option><option>077 Newspapers in eastern Europe; in Russia</option><option>078 Newspapers in Scandinavia</option><option>081 Collections in American English</option><option>085 In Italian, Romanian & related languages</option><option>087 Collections in Slavic languages</option><option>089 Collections in other languages</option><option>091 Manuscripts</option><option>093 Incunabula</option><option>095 Books notable for bindings</option><option>097 Books notable for ownership or origin</option><option>117 Structure</option><option>123 Determinism & indeterminism</option><option>128 Humankind</option><option>168 Argument & persuasion</option><option>169 Analogy</option><option>170 Ethics</option><option>171 Ethical systems</option><option>173 Ethics of family relationships</option><option>174 Occupational ethics</option><option>176 Ethics of sex & reproduction</option><option>179 Other ethical norms</option><option>183 Socratic & related philosophies</option><option>184 Platonic philosophy</option><option>185 Aristotelian philosophy</option><option>186 Skeptic & Neoplatonic philosophies</option><option>187 Epicurean philosophy</option><option>189 Medieval western philosophy</option><option>190 Modern western philosophy</option><option>191 Philosophy of United States & Canada</option><option>194 Philosophy of France</option><option>195 Philosophy of Italy</option><option>196 Philosophy of Spain & Portugal</option><option>197 Philosophy of former Soviet Union</option><option>198 Philosophy of Scandinavia</option><option>199 Philosophy in other geographic areas</option><option>200 Religion</option><option>070 News media, journalism & publishing</option><option>079 Newspapers in other geographic areas</option><option>083 Collections in other Germanic languages</option><option>098 Prohibited works, forgeries & hoaxes</option><option>113 Cosmology</option><option>115 Time</option><option>119 Number & quantity</option><option>121 Epistemology</option><option>140 Specific philosophical schools</option><option>124 Teleology</option><option>126 The self</option><option>167 Hypotheses</option><option>172 Political ethics</option><option>175 Ethics of recreation & leisure</option><option>177 Ethics of social relations</option><option>178 Ethics of consumption</option><option>180 Ancient, medieval & eastern philosophy</option><option>181 Eastern philosophy</option><option>182 Pre-Socratic Greek philosophies</option><option>188 Stoic philosophy</option><option>192 Philosophy of British Isles</option><option>193 Philosophy of Germany & Austria</option><option>201 Religious mythology & social theology</option><option>202 Doctrines</option><option>203 Public worship & other practices</option><option>204 Religious experience, life & practice</option><option>205 Religious ethics</option><option>206 Leaders & organization</option><option>207 Missions & religious education</option><option>141 Idealism & related systems</option><option>142 Critical philosophy</option><option>143 Bergsonism & intuitionism</option><option>143 Bergsonism & intuitionism</option><option>144 Humanism & related systems</option><option>145 Sensationalism</option><option>146 Naturalism & related systems</option><option>147 Pantheism & related systems</option><option>148 Eclecticism, liberalism & traditionalism</option><option>149 Other philosophical systems</option><option>150 Psychology</option><option>152 Perception, movement, emotions & drives</option><option>153 Mental processes & intelligence</option><option>154 Subconscious & altered states</option><option>155 Differential & developmental psychology</option><option>156 Comparative psychology</option><option>158 Applied psychology</option><option>160 Logic</option><option>161 Induction</option><option>162 Deduction</option><option>165 Fallacies & sources of error</option><option>166 Syllogisms</option><option>001 Knowledge</option><option>002 The book</option><option>006 Special computer methods</option><option>014 anonymous & pseudonymous works</option><option>020 Library & information sciences</option><option>022 Administration of physical plant</option><option>030 General encyclopedic works</option><option>031 Encyclopedias in American English</option><option>033 In other Germanic languages</option><option>034 Encyclopedias in French, Occitan & Catalan</option><option>036 Encyclopedias in Spanish & Portuguese</option><option>039 Encyclopedias in other languages</option><option>050 General serial publications</option><option>051 Serials in American English</option><option>054 Serials in French, Occitan & Catalan</option><option>055 In Italian, Romanian & related languages</option><option>056 Serials in Spanish & Portuguese</option><option>059 Serials in other languages</option><option>069 Museum science</option><option>080 General collections</option><option>092 Block books</option><option>094 Printed books</option><option>096 Books notable for illustrations</option><option>099 Books notable for format</option><option>100 Philosophy & psychology</option><option>103 Dictionaries & encyclopedias</option><option>105 Serial publications</option><option>109 Historical & collected persons treatment</option><option>110 Metaphysics</option><option>114 Space</option><option>116 Change</option><option>118 Force & energy</option><option>120 Epistemology, causation & humankind</option><option>122 Causation</option><option>015 Bibliographies of works from specific places</option><option>019 Dictionary catalogs</option><option>021 Library relationships</option><option>060 General organizations & museum science</option><option>061 Organizations in North America</option><option>065 Organizations in Italy & adjacent islands</option><option>066 In Iberian Peninsula & adjacent islands</option><option>208 Sources</option><option>209 Sects & reform movements</option><option>210 Philosophy & theory of religion</option><option>211 Concepts of God</option><option>212 Existence, knowability & attributes of God</option><option>213 Creation</option><option>214 Theodicy</option><option>215 Science & religion</option><option>218 Humankind</option><option>220 Bible</option><option>221 Old Testament (Tanakh)</option><option>222 Historical books of Old Testament</option><option>223 Poetic books of Old Testament</option><option>224 Prophetic books of Old Testament</option><option>225 New Testament</option><option>226 Gospels & Acts</option><option>227 Epistles</option><option>228 Revelation (Apocalypse)</option><option>229 Apocrypha & pseudepigrapha</option><option>230 Christianity & Christian theology</option><option>231 God</option><option>232 Jesus Christ & his family</option><option>233 Humankind</option><option>234 Salvation & grace</option><option>235 Spiritual beings</option><option>236 Eschatology</option><option>238 Creeds & catechisms</option><option>239 Apologetics & polemics</option><option>240 Christian moral & devotional theology</option><option>241 Christian ethics</option><option>242 Devotional literature</option><option>243 Evangelistic writings for individuals</option><option>246 Use of art in Christianity</option><option>247 Church furnishings & articles</option><option>248 Christian experience, practice & life</option><option>249 Christian observances in family life</option><option>250 Christian orders & local church</option><option>251 Preaching</option><option>252 Texts of sermons</option><option>253 Pastoral office & work</option><option>254 Parish administration</option><option>255 Religious congregations & orders</option><option>259 Pastoral care of families & kinds of persons</option><option>260 Social & ecclesiastical theology</option><option>261 Social theology</option><option>262 Ecclesiology</option><option>263 Days, times & places of observance</option><option>264 Public worship</option><option>265 Sacraments, other rites & acts</option><option>266 Missions</option><option>267 Associations for religious work</option><option>268 Religious education</option><option>269 Spiritual renewal</option><option>270 History of Christianity & Christian church</option><option>271 Religious orders in church history</option><option>272 Persecutions in church history</option><option>273 Doctrinal controversies & heresies</option><option>274 History of Christianity in Europe</option><option>275 History of Christianity in Asia</option><option>276 History of Christianity in Africa</option><option>277 History of Christianity in North America</option><option>278 History of Christianity in South America</option><option>279 History of Christianity in other areas</option><option>280 Christian denominations & sects</option><option>281 Early church & Eastern churches</option><option>282 Roman Catholic Church</option><option>283 Anglican churches</option><option>284 Protestants of Continental origin</option><option>285 Presbyterian, Reformed & Congregational</option><option>286 Baptist, Disciples of Christ & Adventist</option><option>287 Methodist & related churches</option><option>289 Other denominations & sects</option><option>290 Other religions</option><option>292 Greek & Roman religion</option><option>293 Germanic religion</option><option>294 Religions of Indic origin</option><option>295 Zoroastrianism</option><option>296 Judaism</option><option>297 Islam, Babism & Bahai Faith</option><option>299 Religions not provided for elsewhere</option><option>300 Social sciences</option><option>301 Sociology & anthropology</option><option>302 Social interaction</option><option>303 Social processes</option><option>304 Factors affecting social behavior</option><option>305 Social groups</option><option>306 Culture & institutions</option><option>307 Communities</option><option>310 Collections of general statistics</option><option>314 General statistics of Europe</option><option>315 General statistics of Asia</option><option>316 General statistics of Africa</option><option>317 General statistics of North America</option><option>318 General statistics of South America</option><option>319 General statistics of other areas</option><option>320 Political science</option><option>321 Systems of governments & states</option><option>322 Relation of state to organized groups</option><option>323 Civil & political rights</option><option>324 The political process</option><option>325 International migration & colonization</option><option>326 Slavery & emancipation</option><option>327 International relations</option><option>328 The legislative process</option><option>330 Economics</option><option>331 Labor economics</option><option>332 Financial economics</option><option>333 Economics of land & energy</option><option>334 Cooperatives</option><option>335 Socialism & related systems</option><option>336 Public finance</option><option>337 International economics</option><option>338 Production</option><option>339 Macroeconomics & related topics</option><option>340 Law</option><option>341 Law of nations</option><option>342 Constitutional & administrative law</option><option>343 Military, tax, trade & industrial law</option><option>344 Labor, social, education & cultural law</option><option>345 Criminal law</option><option>346 Private law</option><option>347 Civil procedure & courts</option><option>348 Laws, regulations & cases</option><option>349 Law of specific jurisdictions & areas</option><option>350 Public administration & military science</option><option>351 Public administration</option><option>352 General considerations of public administration</option><option>353 Specific fields of public administration</option><option>354 Administration of economy & environment</option><option>355 Military science</option><option>356 Infantry forces & warfare</option><option>357 Mounted forces & warfare</option><option>358 Air & other specialized forces</option><option>359 Sea forces & warfare</option><option>360 Social problems & services; associations</option><option>361 Social problems & social welfare in general</option><option>362 Social welfare problems & services</option><option>363 Other social problems & services</option><option>364 Criminology</option><option>365 Penal & related institutions</option><option>366 Associations</option><option>367 General clubs</option><option>368 Insurance</option><option>369 Miscellaneous kinds of associations</option><option>370 Education</option><option>371 Schools & their activities; special education</option><option>372 Elementary education</option><option>373 Secondary education</option><option>374 Adult education</option><option>375 Curricula</option><option>378 Higher education</option><option>379 Public policy issues in education</option><option>380 Commerce, communications & transportation</option><option>381 Commerce</option><option>382 International commerce</option><option>383 Postal communication</option><option>384 Communications; telecommunication</option><option>385 Railroad transportation</option><option>386 Inland waterway & ferry transportation</option><option>387 Water, air & space transportation</option><option>388 Transportation; ground transportation</option><option>389 Metrology & standardization</option><option>390 Customs, etiquette & folklore</option><option>391 Costume & personal appearance</option><option>392 Customs of life cycle & domestic life</option><option>393 Death customs</option><option>394 General customs</option><option>395 Etiquette (Manners)</option><option>398 Folklore</option><option>399 Customs of war & diplomacy</option><option>400 Language</option><option>401 Philosophy & theory</option><option>402 Miscellany</option><option>403 Dictionaries & encyclopedias</option><option>404 Special topics</option><option>405 Serial publications</option><option>406 Organizations & management</option><option>407 Education, research & related topics</option><option>408 Kinds of persons treatment</option><option>409 Geographic & persons treatment</option><option>410 Linguistics</option><option>411 Writing systems</option><option>412 Etymology</option><option>413 Dictionaries</option><option>414 Phonology & phonetics</option><option>415 Grammar</option><option>417 Dialectology & historical linguistics</option><option>418 Standard usage & applied linguistics</option><option>419 Sign languages</option><option>420 English & Old English</option><option>421 English writing system & phonology</option><option>422 English etymology</option><option>423 English dictionaries</option><option>425 English grammar</option><option>427 English language variations</option><option>428 Standard English usage</option><option>429 Old English (Anglo-Saxon)</option><option>430 Germanic languages; German</option><option>431 German writing systems & phonology</option><option>432 German etymology</option><option>433 German dictionaries</option><option>435 German grammar</option><option>437 German language variations</option><option>438 Standard German usage</option><option>439 Other Germanic languages</option><option>440 Romance languages; French</option><option>441 French writing systems & phonology</option><option>442 French etymology</option><option>443 French dictionaries</option><option>445 French grammar</option><option>447 French language variations</option><option>448 Standard French usage</option><option>449 Occitan & Catalan</option><option>450 Italian, Romanian & related languages</option><option>451 Italian writing systems & phonology</option><option>452 Italian etymology</option><option>453 Italian dictionaries</option><option>455 Italian grammar</option><option>457 Italian language variations</option><option>458 Standard Italian usage</option><option>459 Romanian & related languages</option><option>460 Spanish & Portuguese languages</option><option>461 Spanish writing systems & phonology</option><option>462 Spanish etymology</option><option>463 Spanish dictionaries</option><option>465 Spanish grammar</option><option>467 Spanish language variations</option><option>468 Standard Spanish usage</option><option>469 Portuguese</option><option>470 Italic languages; Latin</option><option>471 Classical Latin writing & phonology</option><option>472 Classical Latin etymology</option><option>473 Classical Latin dictionaries</option><option>475 Classical Latin grammar</option><option>477 Old, postclassical & Vulgar Latin</option><option>478 Classical Latin usage</option><option>479 Other Italic languages</option><option>480 Hellenic languages; classical Greek</option><option>481 Classical Greek writing & phonology</option><option>482 Classical Greek etymology</option><option>483 Classical Greek dictionaries</option><option>485 Classical Greek grammar</option><option>487 Preclassical & postclassical Greek</option><option>488 Classical Greek usage</option><option>489 Other Hellenic languages</option><option>490 Other languages</option><option>491 East Indo-European & Celtic languages</option><option>492 Afro-Asiatic languages; Semitic languages</option><option>493 Non-Semitic Afro-Asiatic languages</option><option>494 Altaic, Uralic, Hyperborean & Dravidian</option><option>495 Languages of East & Southeast Asia</option><option>496 African languages</option><option>497 North American native languages</option><option>498 South American native languages</option><option>500 Natural Sciences and Mathematics</option><option>501 Philosophy & theory</option><option>502 Miscellany</option><option>503 Dictionaries & encyclopedias</option><option>505 Serial publications</option><option>506 Organizations & management</option><option>507 Education, research & related topics</option><option>508 Natural history</option><option>509 Historical, geographic & persons treatment</option><option>510 Mathematics</option><option>511 General principles of mathematics</option><option>512 Algebra</option><option>513 Arithmetic</option><option>514 Topology</option><option>515 Analysis</option><option>516 Geometry</option><option>518 Numerical analysis</option><option>519 Probabilities & applied mathematics</option><option>520 Astronomy & allied sciences</option><option>521 Celestial mechanics</option><option>522 Techniques, equipment & materials</option><option>523 Specific celestial bodies & phenomena</option><option>525 Earth (Astronomical geography)</option><option>526 Mathematical geography</option><option>527 Celestial navigation</option><option>528 Ephemerides</option><option>529 Chronology</option><option>530 Physics</option><option>531 Classical mechanics; solid mechanics</option><option>532 Fluid mechanics; liquid mechanics</option><option>533 Gas mechanics</option><option>534 Sound & related vibrations</option><option>535 Light & infrared & ultraviolet phenomena</option><option>536 Heat</option><option>537 Electricity & electronics</option><option>538 Magnetism</option><option>539 Modern physics</option><option>540 Chemistry & allied sciences</option><option>541 Physical chemistry</option><option>542 Techniques, equipment & materials</option><option>543 Analytical chemistry</option><option>546 Inorganic chemistry</option><option>547 Organic chemistry</option><option>548 Crystallography</option><option>549 Mineralogy</option><option>550 Earth sciences</option><option>551 Geology, hydrology & meteorology</option><option>552 Petrology</option><option>553 Economic geology</option><option>554 Earth sciences of Europe</option><option>555 Earth sciences of Asia</option><option>556 Earth sciences of Africa</option><option>557 Earth sciences of North America</option><option>558 Earth sciences of South America</option><option>559 Earth sciences of other areas</option><option>560 Paleontology; paleozoology</option><option>561 Paleobotany; fossil microorganisms</option><option>562 Fossil invertebrates</option><option>563 Fossil marine & seashore invertebrates</option><option>564 Fossil mollusks & molluscoids</option><option>565 Fossil arthropods</option><option>566 Fossil chordates</option><option>567 Fossil cold-blooded vertebrates; fossil fishes</option><option>568 Fossil birds</option><option>569 Fossil mammals</option><option>570 Life sciences; biology</option><option>571 Physiology & related subjects</option><option>572 Biochemistry</option><option>573 Specific physiological systems in animals</option><option>575 Specific parts of & systems in plants</option><option>576 Genetics & evolution</option><option>577 Ecology</option><option>578 Natural history of organisms</option><option>579 Microorganisms, fungi & algae</option><option>580 Plants (Botany)</option><option>581 Specific topics in natural history</option><option>582 Plants noted for characteristics & flowers</option><option>583 Dicotyledons</option><option>584 Monocotyledons</option><option>585 Gymnosperms; conifers</option><option>586 Seedless plants</option><option>587 Vascular seedless plants</option><option>588 Bryophytes</option><option>590 Animals (Zoology)</option><option>591 Specific topics in natural history</option><option>592 Invertebrates</option><option>593 Marine & seashore invertebrates</option><option>594 Mollusks & molluscoids</option><option>595 Arthropods</option><option>596 Chordates</option><option>597 Cold-blooded vertebrates; fishes</option><option>598 Birds</option><option>599 Mammals</option><option>600 Technology</option><option>601 Philosophy & theory</option><option>602 Miscellany</option><option>603 Dictionaries & encyclopedias</option><option>604 Special topics</option><option>605 Serial publications</option><option>606 Organizations</option><option>607 Education, research & related topics</option><option>608 Inventions & patents</option><option>609 Historical, geographic & persons treatment</option><option>610 Medicine & health</option><option>611 Human anatomy, cytology & histology</option><option>612 Human physiology</option><option>613 Personal health & safety</option><option>614 Incidence & prevention of disease</option><option>615 Pharmacology & therapeutics</option><option>616 Diseases</option><option>617 Surgery & related medical specialties</option><option>618 Gynecology, obstetrics, pediatrics & geriatrics</option><option>620 Engineering & allied operations</option><option>621 Applied physics</option><option>622 Mining & related operations</option><option>623 Military & nautical engineering</option><option>624 Civil engineering</option><option>625 Engineering of railroads & roads</option><option>627 Hydraulic engineering</option><option>628 Sanitary & municipal engineering</option><option>629 Other branches of engineering</option><option>630 Agriculture & related technologies</option><option>631 Techniques, equipment & materials</option><option>632 Plant injuries, diseases & pests</option><option>633 Field & plantation crops</option><option>634 Orchards, fruits & forestry</option><option>635 Garden crops (Horticulture)</option><option>636 Animal husbandry</option><option>637 Processing dairy & related products</option><option>638 Insect culture</option><option>639 Hunting, fishing & conservation</option><option>640 Home & family management</option><option>641 Food & drink</option><option>642 Meals & table service</option><option>643 Housing & household equipment</option><option>644 Household utilities</option><option>645 Household furnishings</option><option>646 Sewing, clothing & personal living</option><option>647 Management of public households</option><option>648 Housekeeping</option><option>649 Child rearing & home care of persons</option><option>650 Management & auxiliary services</option><option>651 Office services</option><option>652 Processes of written communication</option><option>653 Shorthand</option><option>657 Accounting</option><option>658 General management</option><option>659 Advertising & public relations</option><option>660 Chemical engineering</option><option>661 Industrial chemicals</option><option>662 Explosives, fuels & related products</option><option>663 Beverage technology</option><option>664 Food technology</option><option>665 Industrial oils, fats, waxes & gases</option><option>666 Ceramic & allied technologies</option><option>667 Cleaning, color & coating technologies</option><option>668 Technology of other organic products</option><option>669 Metallurgy</option><option>670 Manufacturing</option><option>671 Metalworking & primary metal products</option><option>672 Iron, steel & other iron alloys</option><option>673 Nonferrous metals</option><option>674 Lumber processing, wood products & cork</option><option>675 Leather & fur processing</option><option>676 Pulp & paper technology</option><option>677 Textiles</option><option>678 Elastomers & elastomer products</option><option>679 Other products of specific materials</option><option>680 Manufacture for specific uses</option><option>681 Precision instruments & other devices</option><option>682 Small forge work (Blacksmithing)</option><option>683 Hardware & household appliances</option><option>684 Furnishings & home workshops</option><option>685 Leather, fur goods & related products</option><option>686 Printing & related activities</option><option>687 Clothing & accessories</option><option>688 Other final products & packaging</option><option>690 Buildings</option><option>691 Building materials</option><option>692 Auxiliary construction practices</option><option>693 Specific materials & purposes</option><option>694 Wood construction & carpentry</option><option>695 Roof covering</option><option>696 Utilities</option><option>697 Heating, ventilating & air-conditioning</option><option>698 Detail finishing</option><option>700 arts fine & decorative arts</option><option>701 Philosophy of fine & decorative arts</option><option>703 Dictionaries of fine & decorative arts</option><option>704 Special topics in fine & decorative arts</option><option>705 Serial publications of fine & decorative arts</option><option>707 Education, research & related topics</option><option>709 Historical, geographic & persons treatment</option><option>welfare</option><option>test</option><option>820 English literature</option><option>710 Civic & landscape art</option><option>713 Landscape architecture of trafficways</option><option>714 Water features</option><option>715 Woody plants</option><option>716 Herbaceous plants</option><option>717 Structures in landscape architecture</option><option>718 Landscape design of cemeteries</option><option>719 Natural landscapes</option><option>720 Architecture</option><option>721 Architectural structure</option><option>722 Architecture to ca. 300</option><option>723 Architecture from ca. 300 to 1399</option><option>724 Architecture from 1400</option><option>725 Public structures</option><option>726 Buildings for religious purposes</option><option>727 Buildings for education & research</option><option>728 Residential & related buildings</option><option>729 Design & decoration</option><option>730 Plastic arts; sculpture</option><option>731 Processes, forms & subjects of sculpture</option><option>732 Sculpture to ca. 500</option><option>733 Greek, Etruscan & Roman sculpture</option><option>734 Sculpture from ca. 500 to 1399</option><option>735 Sculpture from 1400</option><option>736 Carving & carvings</option><option>737 Numismatics & sigillography</option><option>738 Ceramic arts</option><option>739 Art metalwork</option><option>740 Drawing & decorative arts</option><option>741 Drawing & drawings</option><option>742 Perspective</option><option>743 Drawing & drawings by subject</option><option>745 Decorative arts</option><option>746 Textile arts</option><option>747 Interior decoration</option><option>748 Glass</option><option>749 Furniture & accessories</option><option>750 Painting & paintings</option><option>751 Techniques, equipment, materials & forms</option><option>752 Color</option><option>753 Symbolism, allegory, mythology & legend</option><option>754 Genre paintings</option><option>755 Religion</option><option>757 Human figures</option><option>758 Other subjects</option><option>759 Historical, geographic & persons treatment</option><option>760 Graphic arts; printmaking & prints</option><option>761 Relief processes (Block printing)</option><option>763 Lithographic processes</option><option>764 Chromolithography & serigraphy</option><option>765 Metal engraving</option><option>766 Mezzotinting, aquatinting & related processes</option><option>767 Etching & drypoint</option><option>769 Prints</option><option>770 Photography, photographs & computer art</option><option>771 Techniques, equipment & materials</option><option>772 Metallic salt processes</option><option>773 Pigment processes of printing</option><option>774 Holography</option><option>775 Digital photography</option><option>776 Computer art (Digital art)</option><option>778 Fields & kinds of photography</option><option>779 Photographs</option><option>780 Music</option><option>781 General principles & musical forms</option><option>782 Vocal music</option><option>783 Music for single voices; the voice</option><option>784 Instruments & instrumental ensembles</option><option>785 Ensembles with one instrument per part</option><option>786 Keyboard & other instruments</option><option>787 Stringed instruments</option><option>788 Wind instruments</option><option>790 Recreational & performing arts</option><option>791 Public performances</option><option>792 Stage presentations</option><option>793 Indoor games & amusements</option><option>794 Indoor games of skill</option><option>795 Games of chance</option><option>796 Athletic & outdoor sports & games</option><option>797 Aquatic & air sports</option><option>798 Equestrian sports & animal racing</option><option>799 Fishing, hunting & shooting</option><option>800 Literature & rhetoric</option><option>801 Philosophy & theory</option><option>802 Miscellany</option><option>803 Dictionaries & encyclopedias</option><option>805 Serial publications</option><option>806 Organizations & management</option><option>807 Education, research & related topics</option><option>808 Rhetoric & collections of literature</option><option>809 History, description & criticism</option><option>810 American literature in English</option><option>811 American poetry in English</option><option>812 American drama in English</option><option>813 American fiction in English</option><option>814 American essays in English</option><option>815 American speeches in English</option><option>816 American letters in English</option><option>817 American humor & satire in English</option><option>818 American miscellaneous writings</option><option>820 English literatures</option><option>821 English poetry</option><option>825 English speeches</option><option>829 Old English (Anglo-Saxon)</option><option>830 Literatures of Germanic languages</option><option>831 German poetry</option><option>832 German drama</option><option>833 German fiction</option><option>834 German essays</option><option>835 German speeches</option><option>836 German letters</option><option>837 German humor & satire</option><option>838 German miscellaneous writings</option><option>839 Other Germanic literatures</option><option>840 Literatures of Romance languages</option><option>841 French poetry</option><option>842 French drama</option><option>843 French fiction</option><option>844 French essays</option><option>845 French speeches</option><option>846 French letters</option><option>847 French humor & satire</option><option>848 French miscellaneous writings</option><option>849 Occitan & Catalan literatures</option><option>850 Italian, Romanian & related literatures</option><option>851 Italian poetry</option><option>852 Italian drama</option><option>853 Italian fiction</option><option>854 Italian essays</option><option>855 Italian speeches</option><option>856 Italian letters</option><option>857 Italian humor & satire</option><option>858 Italian miscellaneous writings</option><option>859 Romanian & related literatures</option><option>860 Spanish & Portuguese literatures</option><option>861 Spanish poetry</option><option>862 Spanish drama</option><option>863 Spanish fiction</option><option>864 Spanish essays</option><option>865 Spanish speeches</option><option>866 Spanish letters</option><option>867 Spanish humor & satire</option><option>868 Spanish miscellaneous writings</option><option>869 Portuguese literature</option><option>870 Italic literatures; Latin literature</option><option>871 Latin poetry</option><option>872 Latin dramatic poetry & drama</option><option>873 Latin epic poetry & fiction</option><option>874 Latin lyric poetry</option><option>875 Latin speeches</option><option>876 Latin letters</option><option>877 Latin humor & satire</option><option>878 Latin miscellaneous writings</option><option>879 Literatures of other Italic languages</option><option>880 Hellenic literatures; classical Greek</option><option>881 Classical Greek poetry</option><option>882 Classical Greek dramatic poetry & drama</option><option>883 Classical Greek epic poetry & fiction</option><option>884 Classical Greek lyric poetry</option><option>885 Classical Greek speeches</option><option>886 Classical Greek letters</option><option>887 Classical Greek humor & satire</option><option>888 Classical Greek miscellaneous writings</option><option>889 Modern Greek literature</option><option>890 Literatures of other languages</option><option>891 East Indo-European & Celtic literatures</option><option>892 Afro-Asiatic literatures; Semitic literatures</option><option>893 Non-Semitic Afro-Asiatic literatures</option><option>894 Altaic, Uralic, Hyperborean and Dravidian</option><option>895 Literatures of East & Southeast Asia</option><option>896 African literatures</option><option>897 North American native literatures</option><option>898 South American native literatures</option><option>899 Austronesian & other literatures</option><option>900 History & geography</option><option>901 Philosophy & theory</option><option>902 Miscellany</option><option>903 Dictionaries & encyclopedias</option><option>904 Collected accounts of events</option><option>905 Serial publications</option><option>906 Organizations & management</option><option>907 Education, research & related topics</option><option>908 Kinds of persons treatment</option><option>909 World history</option><option>910 Geography & travel</option><option>911 Historical geography</option><option>912 Atlases, maps, charts & plans</option><option>913 Geography of & travel in ancient world</option><option>914 Geography of & travel in Europe</option><option>915 Geography of & travel in Asia</option><option>916 Geography of & travel in Africa</option><option>917 Geography of & travel in North America</option><option>918 Geography of & travel in South America</option><option>919 Geography of & travel in other areas</option><option>920 Biography, genealogy & insignia</option><option>921 Biography philosophers & psychologists</option><option>922 Biography, religious leaders, thinkers & workers</option><option>923 Biography, persons in social sciences</option><option>924  Biography, philologists & lexicographers</option><option>925 Biography,scientists</option><option>926 Biography, persons in technology</option><option>927 Biography, persons in arts & creation</option><option>928 Biography, persons in literature</option><option>929 Biography, genealogy names & insignia</option><option>930 History of ancient world to ca. 499</option><option>931 China to 420</option><option>932 Egypt to 640</option><option>933 Palestine to 70</option><option>934 India to 647</option><option>935 Mesopotamia & Iranian Plateau to 637</option><option>936 Europe north & west of Italy to ca. 499</option><option>937 Italy & adjacent territories to 476</option><option>938 Greece to 323</option><option>939 Other parts of ancient world to ca. 640</option><option>940 History of Europe</option><option>941 British Isles</option><option>942 England & Wales</option><option>943 Central Europe; Germany</option><option>944 France & Monaco</option><option>945 Italian Peninsula & adjacent islands</option><option>946 Iberian Peninsula & adjacent islands</option><option>947 Eastern Europe; Russia</option><option>948 Scandinavia</option><option>949 Other parts of Europe</option><option>950 History of Asia; Far East</option><option>951 China & adjacent areas</option><option>952 Japan</option><option>953 Arabian Peninsula & adjacent areas</option><option>954 South Asia; India</option><option>955 Iran</option><option>956 Middle East (Near East)</option><option>957 Siberia (Asiatic Russia)</option><option>958 Central Asia</option><option>959 Southeast Asia</option><option>960 History of Africa</option><option>961 Tunisia & Libya</option><option>962 Egypt & Sudan</option><option>963 Ethiopia & Eritrea</option><option>964 Northwest African coast & offshore islands</option><option>965 Algeria</option><option>966 West Africa & offshore islands</option><option>967 Central Africa & offshore islands</option><option>968 Southern Africa; Republic of South Africa</option><option>970 History of North America</option><option>971 Canada</option><option>972 Middle America; Mexico</option><option>973 United States</option><option>974 Northeastern United States</option><option>975 Southeastern United States</option><option>976 South central United States</option><option>977 North central United States</option><option>978 Western United States</option><option>979 Great Basin & Pacific Slope region</option><option>980 History of South America</option><option>981 Brazil</option><option>982 Argentina</option><option>983 Chile</option><option>984 Bolivia</option><option>985 Peru</option><option>986 Colombia & Ecuador</option><option>987 Venezuela</option><option>988 Guiana</option><option>989 Paraguay & Uruguay</option><option>990 History of other areas</option><option>993 New Zealand</option><option>994 Australia</option><option>995 Melanesia; New Guinea</option><option>996 Other parts of Pacific; Polynesia</option><option>997 Atlantic Ocean islands</option><option>998 Arctic islands & Antarctica</option><option>999 Extraterrestrial worlds</option><option>013 Bibliographies & catalogues of specific class of writers</option><option>702 Miscellany of fine & decorative arts</option><option>706 Organizations & management</option><option>708 Galleries, museums & private collections</option><option>822 English drama</option><option>823 English fiction</option><option>824 English essays</option><option>826 English letters</option><option>827 English humor and satire</option><option>828 English miscellaneous writings</option>
+
+              </select></b>
+
+        </td>
+
+
+    </tr>
+
+
+
+    <tr>
+      <td width="191" height="34" bgcolor="#EFEFEF" align="left">
+        <p align="left"><b><font face="Verdana" size="1">Doc ID<font color="#FF0000">*</font></font></b></td>
+      <td width="540" bgcolor="#EFEFEF" align="left" height="34">
+        <input type=text name="rid"  size="25">        </td>
+
+
+    </tr>
+  <center>
+  <center>
+
+
+    <tr>
+      <td width="191" height="34" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">URL</font></b></td>
+  </center>
+      </center>
+      <td width="540" bgcolor="#FFFFFF" align="left" height="34">
+        <p align="left"><input type=text  name="identifier"  size="58"></p>
+      </td>
+    </tr>
+  <center>
+  <center>
+
+
+
+
+ <tr>
+      <td width="191" height="29" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Title<font color="#FF0000">*</font></font></b></td>
+      <td width="540" height="29" bgcolor="#EFEFEF" align="left">
+        <p align="left"><input type=text  name="title"  size="25">
+</p>
+      </td>
+    </tr>
+
+<tr>
+      <td width="191" height="30" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">Author<font color="#FF0000">*</font></font></b></td>
+  </center>
+      </center>
+      <td width="540" height="30" bgcolor="#FFFFFF" align="left">
+        <p align="left"><input type=text  name="creator"  size="25">
+</p>
+      </td>
+    </tr>
+
+
+
+  <center>
+  <center>
+
+  <center>
+
+
+  </center>
+      </center>
+  <center>
+  <center>
+
+
+
+
+ <tr>
+      <td width="191" height="29" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Subject</font></b></td>
+      <td width="540" height="29" bgcolor="#EFEFEF" align="left">
+        <input type=text  name="coverage"  size="25">
+      </td>
+    </tr>
+
+
+
+
+ <tr>
+      <td width="191" height="29" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">Publisher</font></b></td>
+      <td width="540" height="29" bgcolor="#FFFFFF" align="left">
+        <p align="left"><input type=text  name="publisher"  size="25">
+</p>
+      </td>
+    </tr>
+
+
+
+<tr>
+      <td width="191" height="30" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Type</font></b></td>
+  </center>
+      </center>
+     <!-- <td width="540" height="30" bgcolor="#EFEFEF" align="left">
+        <p align="left"><input type=text  name="contributor" size="92">-->
+        <TD WIDTH="193" HEIGHT="28" bgcolor="#EFEFEF" ><font face="Verdana" size="1"><SELECT SIZE="1" NAME="contributor">
+                  <OPTION VALUE="NO" SELECTED>--------------------------</OPTION>
+                  <OPTION VALUE="TAMIL">OPEN SOURCE</OPTION>
+                  <OPTION VALUE="ENGLISH">SUBSCRIBED</OPTION>
+                  <OPTION VALUE="HINDI">COLLEGE SOURCE</OPTION>
+
+
+                </SELECT></font></TD>
+
+
+</p>
+      </td>
+    </tr>
+
+	<tr>
+      <td width="191" height="29" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">ISBN</font></b></td>
+      <td width="540" height="29" bgcolor="#FFFFFF" align="left">
+        <p align="left"><input type=text  name=isbn  size="25">
+</p>
+      </td>
+    </tr>
+
+
+ <tr>
+      <td width="191" height="29" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Doc.Type</font></b></td>
+      <td width="540" height="29" bgcolor="#EFEFEF" align="left">
+        <p align="left"><b><SELECT SIZE="1" NAME="type" width="250" style="width: 176; height: 23"  >
+                <OPTION SELECTED > </OPTION>
+
+                  <OPTION VALUE="BOOK">BOOK</OPTION>
+                  <OPTION VALUE="ARTICLE">ARTICLE</OPTION>
+                  <OPTION VALUE="REPORT">REPORT</OPTION>
+                  <OPTION VALUE="THESIS">THESIS</OPTION>
+                  <OPTION VALUE="STANDARD">STANDARD</OPTION>
+                  <OPTION VALUE="PATENT">PATENT</OPTION>
+                  <OPTION VALUE="CLIPPING">CLIPPING</OPTION>
+                  <OPTION VALUE="NON-BOOK">NON-BOOK</OPTION>
+                  <OPTION VALUE="OTHERS">OTHERS</OPTION>
+
+              </select></b>
+
+</p>
+      </td>
+    </tr>
+
+
+
+<tr>
+      <td width="191" height="30" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">Language</font></b></td>
+  </center>
+      <td width="540" height="30" bgcolor="#FFFFFF" align="left">
+        <p align="left"><b><SELECT SIZE="1" NAME="language" width="250" style="width: 176; height: 23" >
+                <OPTION SELECTED > </OPTION>
+                 <OPTION VALUE="TAMIL">TAMIL</OPTION>
+                  <OPTION VALUE="ENGLISH">ENGLISH</OPTION>
+                  <OPTION VALUE="HINDI">HINDI</OPTION>
+                  <option>URUDU</option>
+
+              </select></b>
+
+</p>
+      </td>
+    </tr>
+
+	<tr>
+      <td width="191" height="29" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Format</font></b></td>
+      <td width="540" height="29" bgcolor="#EFEFEF" align="left">
+        <p align="left"><b><SELECT SIZE="1" NAME="format" width="250" style="width: 176; height: 23" >
+                <OPTION SELECTED ></OPTION>
+                <OPTION VALUE="txt">TXT</OPTION>
+                  <OPTION VALUE="doc">WORD FILE</OPTION>
+                  <OPTION VALUE="jpg">JPG</OPTION>
+                  <OPTION VALUE="gif">GIF</OPTION>
+                  <OPTION VALUE="dat">MOVIE FILE</OPTION>
+                  <OPTION VALUE="html">HTML</OPTION>
+                   <OPTION VALUE="xls">Excel</OPTION>
+				   <OPTION VALUE="mdb">Access</OPTION>
+                  <OPTION VALUE="htm">HTM</OPTION>
+                  <OPTION VALUE="pdf">PDF</OPTION>
+                  <OPTION VALUE="pps">Power Point File</OPTION>
+
+                  <OPTION VALUE="mp3">AUDIO FILE</OPTION>
+
+
+
+              </select></b>
+
+</p>
+      </td>
+    </tr>
+<tr>
+      <td width="191" height="30" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">Pub
+        Date<font color="#FF0000">*</font></font></b></td>
+      <td width="540" height="30" bgcolor="#FFFFFF" align="left">
+        <p align="left"><input type=text  name="date"  size="25"><b><font face="Verdana" size="1" color="#0000FF">(dd/mm/yyyy)</font></b>
+</p>
+      </td>
+    </tr>
+
+	<tr>
+      <td width="191" height="29" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Call
+        No</font></b></td>
+      <td width="540" height="29" bgcolor="#EFEFEF" align="left">
+        <p align="left"><input type=text  name="rights1"  size="25">
+</p>
+      </td>
+    </tr>
+
+<tr>
+      <td width="191" height="30" bgcolor="#FFFFFF" align="left"><b><font face="Verdana" size="1">Source</font></b></td>
+      <td width="540" height="30" bgcolor="#FFFFFF" align="left">
+        <p align="left"><input type=text  name="source"  size="25"><b><font face="Verdana" size="1"><input TYPE="button" VALUE="ADD" NAME="B1" SIZE="25" ONCLICK="getFileName()"><input TYPE="file" NAME="Brows" SIZE="23"></font></b>
+</p>
+      </td>
+    </tr>
+
+
+
+
+	<tr>
+      <td width="191" height="30" bgcolor="#EFEFEF" align="left"><b><font face="Verdana" size="1">Keyword</font></b></td>
+      <td width="540" bgcolor="#EFEFEF" align="left" height="30">
+        <p align="left"><textarea name="description" cols=70 rows=2>
+</textarea>
+      </td>
+    </tr>
+
+  </table></div>
+
+<p align="center">
+
+  <input type="submit" value="Submit"><input type="Button" value="Clear" onclick=window_onload()><input type=hidden name="id"><font face="Verdana" size="1" color="#of2e4f"></font></form>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a img{
+    margin-left: 25%;
+  }
+
+  .user_info{
+    margin-left: -4%;
+  }
+
+  .btn{
+    display: none;
+    float: left;
+  }
+
+  .main-nav{
+    width: 255px;
+    background: #002754;
+    margin-top: 10px;
+  }
+
+  .main-nav a{
+    display: block;
+    padding: 10px 0px 10px 20px;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+    color: white;
+  }
+
+  .main-nav li{
+    list-style: none;
+  }
+
+  .main-nav-ul ul{
+    display: none;
+  }
+
+  .main-nav-ul ul a::before{
+    content: "\203A";
+    margin-right: 20px;
+
+  }
+
+  .main-nav-ul li.tab ul{
+    display: block;
+  }
+  .main-nav .sub-arrow::after{
+    content: '\203A';
+    float: right;
+    margin-right: 15px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -noz-transform: rotate(90deg);
+  }
+
+  .main-nav li.tab .sub-arrow::after{
+    content: "\2039"
+  }
+
+  .main-nav:hover .sub-menu{
+    display: block;
+  }
+
+@media (max-width: 700px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .btn{
+    display: block;
+    position: relative;
+    top: -10px;
+    left: 10px;
+    height: 45px;
+    width: 45px;
+    background: #002567;
+    border: 3px;
+    cursor: pointer;
+
+  }
+  .btn #button{
+    display: block;
+    color: white;
+    font-size: 28;
+    line-height: 45px;
+    text-align: center;
+
+  }
+  .btn.click{
+    left:260px;
+  }
+  .btn.click span::before{
+    content: '\f00d';
+  }
+
+  .main-nav{
+    width: 250px;
+    background: #002754;
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+  }
+
+  .main-nav a{
+    display: block;
+    padding: 10px 0px 10px 20px;
+    text-decoration: none;
+    border-bottom: 4px solid white;
+    color: white;
+  }
+  .main-nav.show{
+    display: block;
+  }
+
+
+
+  .main-nav li{
+    list-style: none;
+  }
+
+  .main-nav-ul ul{
+    display: none;
+  }
+
+  .main-nav-ul ul a::before{
+    content: "\203A";
+    margin-right: 20px;
+
+  }
+
+
+  .main-nav-ul li.tab ul{
+    display: block;
+  }
+  .main-nav .sub-arrow::after{
+    content: '\203A';
+    float: right;
+    margin-right: 15px;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -noz-transform: rotate(90deg);
+  }
+
+  .main-nav li.tab .sub-arrow::after{
+    content: "\2039"
+  }
+
+  .main-nav:hover .sub-menu {
+    display: block;
+  }
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="f1.css">
+    <style>
+      td{
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <FORM NAME="search" METHOD="POST" ACTION="NewDigitalSearchResult.asp" >
+      <center>
+        <div class="tableb">
+          <TABLE border="0">
+            <caption><h1 class="captionh"><font color="black">Simple Search</font></h1></caption>
+            <TR>
+              <th class="table__row__heading">Doc ID</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="rid" SIZE="28">
+              </TD>
+              <th class="table__row__heading">Subject</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="identifier" SIZE="29">
+              </TD>
+            </TR>
+            <TR>
+              <th class="table__row__heading">Title</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="Title" SIZE="28">
+              </TD>
+              <th class="table__row__heading">Author</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="Creator" SIZE="29">
+              </TD>
+            </TR>
+            <TR>
+              <th class="table__row__heading">Collection</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="Subject" SIZE="28">
+              </TD>
+              <th class="table__row__heading">Publisher</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="Publisher" SIZE="29">
+              </TD>
+            </TR>
+            <tr>
+              <th class="table__row__heading">Domain</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="dept" SIZE="28">
+              </TD>
+              <th class="table__row__heading">Keyword</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <INPUT TYPE="text" NAME="Keyword" SIZE="29">
+              </TD>
+            </tr>
+            <TR>
+              <th class="table__row__heading">Format</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <SELECT SIZE="1" NAME="format">
+                  <OPTION VALUE="NO" SELECTED>------------------------------------------</OPTION>
+                  <!--<OPTION VALUE="txt">TXT</OPTION>
+                  <OPTION VALUE="doc">WORD FILE</OPTION>
+                  <OPTION VALUE="jpg">JPG</OPTION>
+                  <OPTION VALUE="gif">GIF</OPTION>
+                  <OPTION VALUE="dat">MOVIE FILE</OPTION>
+                  <OPTION VALUE="html">HTML</OPTION>
+                  <OPTION VALUE="htm">HTM</OPTION>
+                  <OPTION VALUE="pdf">PDF</OPTION>
+                  <OPTION VALUE="mp3">AUDIO FILE</OPTION>-->
+                </SELECT>
+              </TD>
+              <th class="table__row__heading">Type</th>
+              <td>:</td>
+              <TD class="table__row__input">
+                <SELECT SIZE="1" NAME="type">
+                  <OPTION VALUE="NO" SELECTED>--------------------------------------------</OPTION>
+                  <!--<OPTION VALUE="BOOK">BOOK</OPTION>
+                  <OPTION VALUE="PATENT">PATENT</OPTION>
+                  <OPTION VALUE="JOURNAL">JOURNAL</OPTION>
+                  <OPTION VALUE="REPORT">REPORT</OPTION>
+                  <OPTION VALUE="THESIS">THESIS</OPTION>
+                  <OPTION VALUE="STANDARD">STANDARD</OPTION>-->
+                </SELECT>
+              </TD>
+            </TR>
+            <tr>
+              <th class="table__row__heading">Order by</th>
+              <td>:</td>
+              <td class="table__row__input">
+                <SELECT SIZE="1" NAME="order1">
+                  <OPTION VALUE="NO">--------------------</OPTION>
+                  <OPTION VALUE="DL_Rid">Rid</OPTION>
+                </SELECT>
+              </td>
+              <th class="table__row__heading"></th>
+              <td>:</td>
+              <td class="table__row__input">
+                <SELECT SIZE="1" NAME="order2">
+                  <OPTION VALUE="NO">--------------------</OPTION>
+                  <OPTION VALUE="DL_Rid">Rid</OPTION>
+                </SELECT>
+              </td>
+            </tr>
+            <tr>
+              <th class="table__row__heading"></th>
+              <td>:</td>
+              <td class="table__row__input">
+                <SELECT SIZE="1" NAME="order3">
+                  <OPTION VALUE="NO">--------------------</OPTION>
+                  <OPTION VALUE="DL_Rid">Rid</OPTION>
+                </SELECT>
+              </td>
+              <th class="table__row__heading"></th>
+              <td>:</td>
+              <td class="table__row__input">
+                <SELECT SIZE="1" NAME="order4">
+                  <OPTION VALUE="NO">--------------------</OPTION>
+                  <OPTION VALUE="DL_Rid">Rid</OPTION>
+                </SELECT>
+              </TD>
+            </tr>
+            <tr align="center">
+              <td colspan="6">
+                <center>
+                  <input type="submit" value="Submit" class="submit">
+                  <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+              </td>
+
+            </tr>
+          </table>
+          </table>
+        </div>
+      </center>
+    </FORM>
+  </body>
+</html>
