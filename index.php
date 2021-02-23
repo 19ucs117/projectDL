@@ -57,7 +57,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     <div class="login-help">
       <div class="alert alert-success" role="alert">
       Respected group members, please use 'Username' as department number, and 
-'Password' as your mobile numbe.
+'Password' as your mobile number.
     </div>
       <p>Forgot your password? <a href="reset.html">Click here to reset it</a>.</p>
     </div>
