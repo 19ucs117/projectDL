@@ -17,14 +17,16 @@ $_SESSION['stdImage'] = $row['Image'];
 $_SESSION['stdEmail'] = $row['Email'];
 $_SESSION['stdMobile'] = $row['MobileNo'];
 $_SESSION['stdPassword'] = $row['Password'];
+$_SESSION['stdDob'] = $row['DOB'];
 
 if (isset($_POST['user_update'])) {
   $newName = $_POST['name'];
   $newEmail = $_POST['email'];
   $newMobile = $_POST['mobile'];
-  $sql_user_update = "UPDATE student SET Name=:name, Email=:email, MobileNo=:mobileno WHERE UserName=:DeptUpdated";
+  $newDob = $_POST['dob'];
+  $sql_user_update = "UPDATE student SET Name=:name, Email=:email, MobileNo=:mobileno, DOB=:dob WHERE UserName=:DeptUpdated";
   $sql_query_update = $pdo->prepare($sql_user_update);
-  $sql_update_execution = $sql_query_update->execute(array(':name' => $newName, ':email' => $newEmail, ':mobileno' => $newMobile, ':DeptUpdated' => $_SESSION['kiln']));
+  $sql_update_execution = $sql_query_update->execute(array(':name' => $newName, ':email' => $newEmail, ':mobileno' => $newMobile, ':dob' => $newDob, ':DeptUpdated' => $_SESSION['kiln']));
 
 
   if ($sql_update_execution) {
@@ -208,7 +210,7 @@ if(isset($_POST['fsubmit'])) {
 
       <div class="form-group col-md-6">
         <label class="tx-bold">D.O.B</label>
-        <input type="date" name="dob" class="form-control" value="">
+        <input type="date" name="dob" class="form-control" value="<?php session_start(); echo $_SESSION['stdDob']; ?>">
       </div>
 
     </div>
