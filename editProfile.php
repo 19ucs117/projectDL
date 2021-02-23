@@ -210,7 +210,7 @@ if(isset($_POST['fsubmit'])) {
 
       <div class="form-group col-md-6">
         <label class="tx-bold">D.O.B</label>
-        <input type="date" name="dob" class="form-control" value="<?php session_start(); echo $_SESSION['stdDob']; ?>">
+        <input type="date" placeholder="DD/MM/YYYY" name="dob" class="form-control" value="<?php session_start(); echo $_SESSION['stdDob']; ?>">
       </div>
 
     </div>
