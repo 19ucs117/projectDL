@@ -41,7 +41,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
       <form name="myForm" action="index.php" method="POST">
         <p>Username: <input type="text" name="uname" value=""></p>
         <p>Password: <input type="password" name="pswd" value=""></p>
-        <p align="center"><input type="submit" id="submit" value="submit"></p>
+        <p align="center"><input type="submit" id="submit" value="Login"></p>
       </form>
       <div class="error">
         <?php
