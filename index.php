@@ -27,7 +27,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 <html lang="en" dir="ltr">
   <head>
     <link rel="shortcut icon" type="image/x-icon" href="https://iqac.loyolacollege.edu/academic/assets/img/favicon.png">
-    <title>Digital Library Loginpage</title>
+    <title>Loyola Digital Library</title>
     <script type="text/javascript" src="gs://projectdl-2c51c.appspot.com"></script>
     <link rel="stylesheet" href="index_page.css">
     <a href="#">
@@ -37,7 +37,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
   </head>
   <body>
     <div class="login">
-      <h1>Digital Library Login</h1>
+      <h1>Digital Library Login Page</h1>
       <form name="myForm" action="index.php" method="POST">
         <p>Username: <input type="text" name="uname" value=""></p>
         <p>Password: <input type="password" name="pswd" value=""></p>
