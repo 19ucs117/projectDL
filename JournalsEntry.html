@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="f1.css">
+  <style>
+    td{
+      padding: 2%;
+
+    }
+    th{
+      padding: 2%;
+
+    }
+  </style>
+</head>
+
+<body>
+<center>
+  <form name=f1 method=get autocomplete="off" action="save_journal.asp" onsubmit="return validate()">
+    <div class="table__div">
+      <table>
+        <caption><h2>Journal Entry</h2></caption>
+        <tr>
+          <th class="table__row__heading">
+            Journal Code <span><sup>*</sup></span>
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=jnlcode value="3920" size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Web Address
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=url size="53">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Journal Title <span><sup>*</sup></span>
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=jnltitle size="53">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Publisher
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=publisher size="53">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Year
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=pubyear size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Address
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=address size="53">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            City
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=city size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Country
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=country size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Available from
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=avlfrom size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Subject
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <input type=text name=subject size="25">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">Source</th>
+          <td align="center" >:</td>
+          <td class="table__row__input" style="display:inline-block;">
+            <input id="subs" type=text  name="source">
+            <input id="subt" type="button" VALUE="ADD" NAME="B1" ONCLICK="getFileName()">
+            <input id="subu" TYPE="file" NAME="Brows">
+          </td>
+        </tr>
+        <tr>
+          <th class="table__row__heading">
+            Description
+          </th>
+          <td>:</td>
+          <td class="table__row__input">
+            <textarea name="Remark" cols=49 rows=4></textarea>
+          </td>
+        </tr>
+        <br>
+        <tr align="center">
+          <td colspan="3">
+            <center>
+              <input type="submit" value="Submit" class="submit">
+              <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+            </center>
+          </td>
+        </tr>
+      </table>
+    </div>
+ </form>
+</center>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+</style>
+</body>
+</html>

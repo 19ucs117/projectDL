@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      td{
+        padding: 2%;
+      }
+    </style>
+    <link rel="stylesheet" href="f1.css">
+  </head>
+  <body>
+    <form name="f1" method="get" autocomplete="off" action="database_update_Display.asp" onsubmit="return validate()">
+      <div>
+        <center>
+        <center>
+        <table align="center">
+          <caption><h2 class="captionh">Collection Creation</h2></caption>
+          <tbody>
+            <tr>
+              <th class="table__row__heading">
+                Domain Name<span><sup>*</sup></span>
+              </th>
+              <td align="center" >:</td>
+              <td class="table__row__input">
+                <input type="text" name="did" value="" size="21">
+              </td>
+            </tr>
+            <tr>
+              <th class="table__row__heading">
+                Call. Name<span><sup>*</sup></span>
+              </th>
+              <td align="center" >:</td>
+              <td class="table__row__input">
+                <input type="text" name="did" value="" size="21">
+              </td>
+            </tr>
+            <tr>
+              <th class="table__row__heading">
+                Description
+              </th>
+              <td align="center" >:</td>
+              <td class="table__row__input">
+                <p>
+                  <textarea name="Remark" cols=49 rows=4></textarea>
+                </p>
+              </td>
+            </tr>
+            <tr align="center">
+              <td colspan="3" class="table__row__input">
+                  <input type="submit" value="Submit" class="submit">
+
+
+                  <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+
+            </td>
+            </tr>
+          </tbody>
+        </table>
+        <center>
+        <center>
+      </div>
+    </form>
+  </body>
+</html>

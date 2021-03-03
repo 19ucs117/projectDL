@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="f1.css">
+    <style>
+      td{
+        padding: 2%;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <FORM METHOD="POST" ACTION="digitalresult.asp" NAME="digital" onsubmit="return validate()">
+      <div>
+        <table>
+          <caption><h4 class="captionh">Resource Submission</h4></caption>
+          <center>
+          <center>
+            <center>
+              <tr>
+                <th class="table__row__heading">
+                  Domain<span><sup>*</sup></span>
+                </th>
+                <td align="center" >:</td>
+                <TD class="table__row__input">
+                  <SELECT SIZE="1" width="250" style="width: 176; height: 23" NAME='dept' id='dept_new' onChange ="collection()">
+                          <OPTION VALUE="NO" SELECTED>   </OPTION>
+                          <option value="000 computers,information,general reference">000 computers,information,general reference </option>
+                  </select>
+                </TD>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Collection<span><sup>*</sup></span></th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                    <SELECT SIZE="1" NAME="Subject" width="250" style="width: 176; height: 23">
+                      <OPTION value="NO">-----------</OPTION>
+                    </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Doc ID<span><sup>*</sup></span></th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text name="rid"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">URL</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="identifier">
+                </td>
+              </tr>
+              <tr>
+                <th>Title<span><sup>*</sup></span></th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="title"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Author</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="creator"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Subject</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="coverage"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Publisher</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="publisher"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Type</th>
+                <td align="center" >:</td>
+              <!-- <td width="540" height="30" bgcolor="#EFEFEF" align="left">
+              <p align="left"><input type=text  name="contributor" size="92">-->
+                <TD class="table__row__input">
+                  <SELECT SIZE="1" NAME="contributor">
+                      <OPTION VALUE="NO" SELECTED>--------------------------</OPTION>
+                    </SELECT>
+                </TD>
+              </tr>
+              <tr>
+                <th class="table__row__heading">ISBN</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name=isbn  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Doc.Type</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <SELECT SIZE="1" NAME="type" width="250" style="width: 176; height: 23">
+                        <OPTION SELECTED > </OPTION>
+                        <OPTION VALUE="BOOK">BOOK</OPTION>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Language</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <SELECT SIZE="1" NAME="language" width="250" style="width: 176; height: 23">
+                        <OPTION SELECTED > </OPTION>
+                        <OPTION VALUE="TAMIL">TAMIL</OPTION>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Format</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <SELECT SIZE="1" NAME="format" width="250" style="width: 176; height: 23">
+                        <OPTION SELECTED ></OPTION>
+                        <OPTION VALUE="txt">TXT</OPTION>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Pub Date</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="date"  size="25"><span>(dd/mm/yyyy)</span>
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Call No</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                  <input type=text  name="rights1"  size="25">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Source</th>
+                <td align="center" >:</td>
+                <td class="table__row__input" style="display:inline-block;">
+                  <input id="subs" type=text  name="source">
+                  <input id="subt" type="button" VALUE="ADD" NAME="B1" ONCLICK="getFileName()">
+                  <input id="subu" TYPE="file" NAME="Brows">
+                </td>
+              </tr>
+              <tr>
+                <th class="table__row__heading">Keyword</th>
+                <td align="center" >:</td>
+                <td class="table__row__input">
+                    <input type="text" name="Keyword">
+                </td>
+              </tr>
+              <br>
+              <tr align="center">
+                <td colspan="3">
+                  <center>
+                    <input type="submit" value="Submit" class="submit">
+                    <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+                </td>
+
+              </tr>
+            </center>
+          </center>
+        </table>
+      </div>
+    </form>
+  </center>
+  </body>
+</html>

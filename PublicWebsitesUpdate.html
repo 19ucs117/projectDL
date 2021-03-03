@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      td{
+        padding: 4%;
+      }
+    </style>
+    <link rel="stylesheet" href="f1.css">
+  </head>
+  <body>
+    <form name="f1" method="get" autocomplete="off" action="database_update_Display.asp" onsubmit="return validate()">
+      <div>
+        <center>
+        <center>
+        <table align="center">
+          <caption><h4 style="font-size:20px;" class="captionh">Public Websites Update</h4></caption>
+          <tbody>
+            <tr>
+              <th class="table__row__heading">
+                Web Code<span><sup>*</sup></span>
+              </th>
+              <td align="center" >:</td>
+              <td class="table__row__input">
+                <input type="text" name="did" value="" size="21">
+              </td>
+            </tr>
+            <tr align="center">
+              <td class="table__row__input">
+                  <input type="submit" value="Submit" class="submit">
+                </td>
+                <td></td>
+                <td class="table__row__input">
+                  <input type="reset" class="clear" value="Clear" onclick=window_onload()>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <center>
+        <center>
+      </div>
+    </form>
+  </body>
+</html>

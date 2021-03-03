@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>    
+  </head>
+  <body>
+    <from>
+      <div align="right">
+        <table border="1" width="950" align="center" cellspacing="1" cellpadding="3" style="border-collapse: collapse" bordercolor="#of2e4f">
+          <caption><h2>New Entry Approval</h2></caption>
+          <tbody>
+            <tr>
+              <th>Choose</th>
+              <th>SNo</th>
+              <th>Date</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>DomainName</th>
+              <th>Collection</th>
+              <th>Modify</th>
+              <th>Delete</th>
+              <th>Approve</th>
+            </tr>
+            <tr>
+              <td align="center"><input type="checkbox" name="" onclick=""></td>
+              <td align="center">01</td>
+              <td align="center">05-11-2015</td>
+              <td align="left">Noncommutative Geometry</td>
+              <td align="left">Alain Connes</td>
+              <td align="left">510 Mathematics</td>
+              <td align="left">516 Geometry</td>
+              <td align="center">
+                <a href="#">
+                    <b>Edit</b>
+                </a>
+              </td>
+              <td align="center">
+                <a href="#">
+                    <b>Delete</b>
+                </a>
+              </td>
+              <td align="center">
+                <a href="#">
+                    <b>Approve</b>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br>
+      <br>
+      <font size="1" face="Verdana">
+        <a href="#" onclick="show()">
+          <b>
+          <center>  Approve  </center>
+          </b>
+        </a>
+        <form name="mailsend" action="check.asp" method="get">
+          <input type="hidden" name="accnos">
+          <input type="hidden" name="uid">
+        </form>
+      </font>
+    </form>
+  </body>
+</html>
