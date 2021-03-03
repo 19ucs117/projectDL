@@ -28,7 +28,7 @@ $_SESSION['studImage'] = $row['Image'];
     <script src="fontawesome.js"></script>
     <style>
       .bottom-grid-item .responsive_iframe{
-         min-height: 100%;
+         min-height: 600px;
       }
     </style>
   </head>
