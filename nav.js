@@ -49,7 +49,7 @@ $(document).ready(function(e) {
   });
 
   $("#JournalsUpdate").click(function(){
-    $(".Home").html("<p>JournalUpdates</p>");
+    $(".Home").html("<p>JournalUpdate</p>");
   });
 
   $("#PublicWebsitesEntry").click(function(){
@@ -61,7 +61,7 @@ $(document).ready(function(e) {
   });
 
   $("#PublicWebsitesUpdate").click(function(){
-    $(".Home").html("<p>PublicWebsitesUpdates</p>");
+    $(".Home").html("<p>PublicWebsitesUpdate</p>");
   });
 
   $("#Search").click(function(){
@@ -81,47 +81,47 @@ $(document).ready(function(e) {
   });
 
   $("#NewUserApproval").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>NewUserApproval</p>");
   });
   
   $("#UserUpdate").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>UserUpdate</p>");
   });
 
   $("#UserDelete").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>UserDelete</p>");
   });  
 
   $("#DomainCreation").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>DomainCreation</p>");
   });
 
   $("#DomainUpdate").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>DomainUpdate</p>");
   });  
 
   $("#CollectionCreation").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>CollectionCreation</p>");
   });
 
   $("#CollectionUpdate").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>CollectionUpdate</p>");
   });
 
   $("#NewEntryApproval").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>NewEntryApproval</p>");
   });
 
   $("#ResourceSubmission").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>ResourceSubmission</p>");
   });
 
   $("#DocumentDelete").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>DocumentDelete</p>");
   });
 
   $("#DocumentUpdate").click(function(){
-    $(".Home").html("<p>EditProfile</p>");
+    $(".Home").html("<p>DocumentUpdate</p>");
   });
 
 });
