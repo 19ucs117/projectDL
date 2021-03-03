@@ -26,6 +26,11 @@ $_SESSION['studImage'] = $row['Image'];
     <script type="text/javascript" src="nav.js"></script>
     <script type="text/javascript" src="indexpage.js"></script>
     <script src="fontawesome.js"></script>
+    <style>
+      .bottom-grid-item .responsive_iframe{
+         min-height: 100%;
+      }
+    </style>
   </head>
   <body>
     <div class="main">
