@@ -40,7 +40,7 @@ $(document).ready(function(e) {
     $(".Home").html("<p>SimpleSearch</p>");
   });
 
-  $("#JournalEntry").click(function(){
+  $("#JournalsEntry").click(function(){
     $(".Home").html("<p>JournalEntry</p>");
   });
 
@@ -48,7 +48,7 @@ $(document).ready(function(e) {
     $(".Home").html("<p>JournalSearch</p>");
   });
 
-  $("#JournalUpdates").click(function(){
+  $("#JournalsUpdate").click(function(){
     $(".Home").html("<p>JournalUpdates</p>");
   });
 
@@ -60,7 +60,7 @@ $(document).ready(function(e) {
     $(".Home").html("<p>PublicWebsitesSearch</p>");
   });
 
-  $("#PublicWebsitesUpdates").click(function(){
+  $("#PublicWebsitesUpdate").click(function(){
     $(".Home").html("<p>PublicWebsitesUpdates</p>");
   });
 
@@ -78,6 +78,50 @@ $(document).ready(function(e) {
 
   $("#DatabaseWebsitesUpdate").click(function(){
     $(".Home").html("<p>DatabaseWebsitesUpdate</p>");
+  });
+
+  $("#NewUserApproval").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+  
+  $("#UserUpdate").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#UserDelete").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });  
+
+  $("#DomainCreation").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#DomainUpdate").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });  
+
+  $("#CollectionCreation").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#CollectionUpdate").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#NewEntryApproval").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#ResourceSubmission").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#DocumentDelete").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
+  });
+
+  $("#DocumentUpdate").click(function(){
+    $(".Home").html("<p>EditProfile</p>");
   });
 
 });
