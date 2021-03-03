@@ -27,7 +27,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 <html lang="en" dir="ltr">
   <head>
     <link rel="shortcut icon" type="image/x-icon" href="https://iqac.loyolacollege.edu/academic/assets/img/favicon.png">
-    <title>Loyola Digital Library</title>
+    <title>Digital Library Loginpage</title>
     <script type="text/javascript" src="gs://projectdl-2c51c.appspot.com"></script>
     <link rel="stylesheet" href="index_page.css">
     <a href="#">
