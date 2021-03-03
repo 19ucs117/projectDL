@@ -70,11 +70,11 @@ $_SESSION['studImage'] = $row['Image'];
               <li class="sub-menu"><a id="Admin">Admin<span class="sub-arrow"></span></a>
                 <ul>
                   <li><a href="NewUserApproval.html" id="NewUserApproval" target="right">New User Approval</a></li>
-                  <li><a href="UserUpdate.html" id="AdvancedSearch" target="right">User Update</a></li>
+                  <li><a href="UserUpdate.html" id="UserUpdate" target="right">User Update</a></li>
                   <li><a href="UserDelete.html" id="UserDelete" target="right">User Delete</a></li>
                   <li><a href="DomainCreation.html" id="DomainCreation" target="right">Domain Creation</a></li>
                   <li><a href="DomainUpdate.html" id="DomainUpdate" target="right">Domain Update</a></li>
-                  <li><a href="CollectionCreation.html" id="SimpleSearch" target="right">Collection Creation</a></li>
+                  <li><a href="CollectionCreation.html" id="CollectionCreation" target="right">Collection Creation</a></li>
                   <li><a href="CollectionUpdate.html" id="CollectionUpdate" target="right">Collection Update</a></li>
                   <li><a href="NewEntryApproval.html" id="NewEntryApproval" target="right">New Entry Approval</a></li>
                   <li><a href="DocumentUpdate.html" id="DocumentUpdate" target="right">Document Update</a></li>
@@ -96,8 +96,8 @@ $_SESSION['studImage'] = $row['Image'];
               </li>
               <li class="sub-menu"><a id="Journals">Journals<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="JournalsEntry.html" id="JournalEntry" target="right">Journal Entry</a></li>
-                  <li><a href="JournalsUpdate.html" id="JournalUpdate" target="right">Journal Update</a></li>
+                  <li><a href="JournalsEntry.html" id="JournalsEntry" target="right">Journal Entry</a></li>
+                  <li><a href="JournalsUpdate.html" id="JournalsUpdate" target="right">Journal Update</a></li>
                   <li><a href="JournalSearch.html" id="JournalSearch" target="right">Journal Search</a></li>
                 </ul>
               </li>
