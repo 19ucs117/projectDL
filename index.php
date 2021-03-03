@@ -10,10 +10,23 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
   $row = $query->fetch(PDO::FETCH_ASSOC);
 
   if($row != false || $row != ''){
-    $_SESSION['success'] = "success";
-    $_SESSION['account'] = $row['UserName'];
-    $_SESSION['uname'] = $_POST['uname'];
-    header("location: indexpage.php");
+    $adminUserName = strtolower($_POST['uname']);
+    if ($adminUserName == 'admin') {
+      $_SESSION['success'] = "success";
+      $_SESSION['account'] = $row['UserName'];
+      $_SESSION['uname'] = $_POST['uname'];
+      header("location: indexAdminpage.php");
+      return;
+    }
+
+    else{
+      $_SESSION['success'] = "success";
+      $_SESSION['account'] = $row['UserName'];
+      $_SESSION['uname'] = $row['UserName'];
+      header("location: indexpage.php");
+      return;
+    }
+
   }
   else {
     $error = "<center><b><font color=#002567>Invalid userName or password</font></b></center>";
