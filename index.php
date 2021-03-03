@@ -37,7 +37,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
   </head>
   <body>
     <div class="login">
-      <h1>Login</h1>
+      <h1>Digital Library Login</h1>
       <form name="myForm" action="index.php" method="POST">
         <p>Username: <input type="text" name="uname" value=""></p>
         <p>Password: <input type="password" name="pswd" value=""></p>
