@@ -22,7 +22,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     else{
       $_SESSION['success'] = "success";
       $_SESSION['account'] = $row['UserName'];
-      $_SESSION['uname'] = $row['UserName'];
+      $_SESSION['uname'] = $_POST['uname'];
       header("location: indexpage.php");
       return;
     }
