@@ -123,7 +123,7 @@ $_SESSION['studImage'] = $row['Image'];
           <div class="btn">
             <span id="button" class="fa fa-bars"></span>
           </div>
-          <iframe align="justify" class="responsive_iframe" src="Home.html" width="100%" height="600px" name="right" style="border:0">
+          <iframe align="justify" class="responsive_iframe" src="Home.html" width="100%" name="right" style="border:0">
           </iframe>
         </div>
       </div>
