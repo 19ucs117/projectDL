@@ -89,11 +89,7 @@ if(isset($_POST['fsubmit'])) {
 <!DOCTYPE html>
 
 <html lang="en"><head>
-  <script>
-      $(window).on("load",function(){
-        $(".loader").fadeOut("slow");
-      });
-  </script>
+  
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <!-- Required meta tags -->
@@ -180,7 +176,14 @@ if(isset($_POST['fsubmit'])) {
   
   <link rel="stylesheet" href="fontello.css" type="text/css"></head>
   <body class="bg-gray-100">
-  <iframe class="loader" src="preload.html" width="100%" height="1000px" style="border:0;"></iframe>
+  
+    <script>
+      $(window).on("load",function(){
+        $(".loader").fadeOut("slow");
+      });
+  </script>
+    <iframe class="loader" src="preload.html" width="100%" height="1000px" style="border:0;"></iframe>
+    
  <!-- content -->
      <div class="content">
       <div class="container-fluid pd-x-0 pd-lg-x-0 pd-xl-x-0">
