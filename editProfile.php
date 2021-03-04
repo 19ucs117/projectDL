@@ -176,7 +176,7 @@ if(isset($_POST['fsubmit'])) {
   
   <link rel="stylesheet" href="fontello.css" type="text/css"></head>
   <body class="bg-gray-100">
-  
+  <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
     <script>
       $(window).on("load",function(){
         $(".loader").fadeOut("slow");
