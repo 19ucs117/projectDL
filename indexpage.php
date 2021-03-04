@@ -26,8 +26,14 @@ $_SESSION['studImage'] = $row['Image'];
     <script type="text/javascript" src="nav.js"></script>
     <script type="text/javascript" src="indexpage.js"></script>
     <script src="fontawesome.js"></script>
+    <script>
+      $(window).on("load",function(){
+        $(".loader").fadeOut("slow");
+      });
+    </script>
   </head>
   <body>
+    <iframe class="loader" src="preload.html" width="100%" height="1000px" style="border:0;"></iframe>
     <div class="main">
       <div class="logo">
         <center>
