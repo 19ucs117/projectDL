@@ -43,6 +43,21 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     <title>Loyola Digital Library</title>
     <script type="text/javascript" src="gs://projectdl-2c51c.appspot.com"></script>
     <link rel="stylesheet" href="index_page.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-N7ZGZZF5B1"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+  gtag('config', 'G-N7ZGZZF5B1');
+
+</script>
     <a href="#">
       <img src="loyola_icon.png" alt="hpage">
     </a>
