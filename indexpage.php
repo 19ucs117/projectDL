@@ -56,19 +56,24 @@ $_SESSION['studImage'] = $row['Image'];
             <ul class="main-nav-ul">
               <li>
                 <a href="#">
-                  <img  src="user-icon.png" alt="Workplace" usemap="#workmap" width="80" height="80"/>
-                  <map name="workmap">
-                    <area shape="circle" coords="40,40,38" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
-                  </map>
-                  <span class="user_info" style="padding-bottom: 9px;">
-                    <span size="30" style="float: left; color: yellow; font-size: 16px;"><b><font size="4px">WELCOME</font></b> <?php session_start(); echo $_SESSION['studName']; ?></span>
-
-                    <span style="float: left; color: yellow; font-size: 16px;">Dept.No:- <?php session_start(); echo $_SESSION['departNum']; ?></span>
-                  </span>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
+                  <center>
+                    <img src="<?php session_start(); echo $_SESSION['studImage']; ?>" style="height: auto;max-width: 100%;width: 100px;width: 100px !important;min-height: 100px;height: 100px;border-radius: 50% !important; margin-left:-30px;" alt="Workplace" usemap="#workmap">
+                    <map name="workmap">
+                      <area shape="circle" coords="50,50,50" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
+                    </map>
+                  </center>
+                  <div align="center" class="user_info" style="background-color: #FBF702; border-radius: 20px;height: 70px; width: 100%; margin-top:10px;">
+                    <span class="user_info">
+                      <span size="30" style="float: left; color: black; font-size: 16px;">
+                        <b>
+                          <font size="4px">WELCOME</font><br>
+                        </b>&nbsp;&nbsp; <?php session_start(); echo $_SESSION['studName']; ?>
+                      </span>
+                      <span style="float: left; color: black; font-size: 16px;">&nbsp;&nbsp;
+                        Dept.No:- <?php session_start(); echo $_SESSION['departNum']; ?>
+                      </span>
+                    </span>
+                  </div>
                   <br>
                 </a>
               </li>
