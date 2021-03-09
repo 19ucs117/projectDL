@@ -62,7 +62,7 @@ $_SESSION['studImage'] = $row['Image'];
                       <area shape="circle" coords="50,48,47" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
                     </map>
                   </center>
-                  <div align="center" class="user_info" style="background-color: #FBF702; border-radius: 20px;height: 70px; width: 100%; margin-top:10px;">
+                  <div align="center" class="user_info" style="background-color: #FBEC88; border-radius: 20px;height: 70px; width: 100%; margin-top:10px;">
                     <span class="user_info">
                       <span size="30" style="float: left; color: black; font-size: 16px;">
                         <b>
