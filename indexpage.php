@@ -59,7 +59,7 @@ $_SESSION['studImage'] = $row['Image'];
                   <center>
                     <img src="<?php session_start(); echo $_SESSION['studImage']; ?>" style="height: auto;max-width: 100%;width: 100px;width: 100px !important;min-height: 100px;height: 100px;border-radius: 50% !important; margin-left:-30px;" alt="Workplace" usemap="#workmap">
                     <map name="workmap">
-                      <area shape="circle" coords="50,50,50" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
+                      <area shape="circle" coords="48,48,50" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
                     </map>
                   </center>
                   <div align="center" class="user_info" style="background-color: #FBF702; border-radius: 20px;height: 70px; width: 100%; margin-top:10px;">
