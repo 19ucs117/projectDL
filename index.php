@@ -121,7 +121,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
           <rect width="4" height="9" x="6" y="6" rx="1"></rect>
           <rect width="4" height="14" x="11" y="1" rx="1"></rect>
         </svg>
-        &nbsp;&nbsp;Today's View Count:&nbsp;&nbsp;
+        &nbsp;&nbsp;Today's View Count&nbsp;:-&nbsp;&nbsp;
         <?php session_start(); echo $_SESSION['counterNo']; ?>
       </b>
     </div>
