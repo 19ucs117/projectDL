@@ -2,6 +2,26 @@
 session_start();
 require_once 'config.php';
 $counter = 1;
+date_default_timezone_set("Asia/Calcutta");
+$TodaysDate = date("Y-m-d");
+$sqlCounter = "SELECT * FROM Analytics ORDER BY SNo DESC LIMIT 1";
+$queryCounter = $pdo->query($sqlCounter);
+$rowCounter = $queryCounter->fetch();
+$_SESSION['counterNo'] = $rowCounter['NoOfViews'];
+$_SESSION['counterSNo'] = $rowCounter['SNo'];
+
+$sqlCounterZero = "SELECT DATE(Date) as DATE from Analytics WHERE SNO=:countersno";
+$queryCounterZero = $pdo->prepare($sqlCounterZero);
+$queryCounterZero -> execute(array(':countersno' => $_SESSION['counterSNo'] ));
+$rowCounterZero = $queryCounterZero->fetch(PDO::FETCH_ASSOC);
+$_SESSION['counterNoZero'] = $rowCounterZero['DATE'];
+
+if (date("Y-m-d")!=$_SESSION['counterNoZero']) {
+  $sqlCounterInsert = "INSERT INTO Analytics(Date) VALUES(CONVERT_TZ(CURRENT_TIMESTAMP(), @@global.time_zone, '+05:30'))";
+  $pdo->exec($sqlCounterInsert);
+  $_SESSION['counterSNo'] = ($rowCounter['SNo'] + 1);
+}
+
 
 if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 
@@ -12,7 +32,11 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 
   if($row != false || $row != ''){
     $adminUserName = strtolower($_POST['uname']);
-    if ($adminUserName == 'admin') {      
+    if ($adminUserName == 'admin') {
+      $sqlCounterUpdate = "UPDATE Analytics SET NoOfViews=:noofviews WHERE SNo=:serialNoOfcounter";
+      $queryCounterUpdate = $pdo->prepare($sqlCounterUpdate);
+      $updatedCounter = $queryCounterUpdate -> execute(array(':noofviews' => ($_SESSION['counterNo']+1), ':serialNoOfcounter' => $_SESSION['counterSNo'] ));
+
       $_SESSION['success'] = "success";
       $_SESSION['account'] = $row['UserName'];
       $_SESSION['uname'] = $_POST['uname'];
@@ -21,7 +45,9 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     }
 
     else{
-      
+      $sqlCounterUpdate = "UPDATE Analytics SET NoOfViews=:noofviews WHERE SNo=:serialNoOfcounter";
+      $queryCounterUpdate = $pdo->prepare($sqlCounterUpdate);
+      $updatedCounter = $queryCounterUpdate -> execute(array(':noofviews' => ($_SESSION['counterNo']+1), ':serialNoOfcounter' => $_SESSION['counterSNo'] ));
       $_SESSION['success'] = "success";
       $_SESSION['account'] = $row['UserName'];
       $_SESSION['uname'] = $_POST['uname'];
@@ -82,13 +108,24 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
         }
         ?>
       </div>
-    </div>
-    
+    </div>  
 
     <div class="login-help">      
       <p>Forgot your password? <a href="reset.html">Click here to reset it</a>.</p>
     </div>
-    
-     </body>
+    <center>
+    <div style="padding:10px;width: 300px;background-color: #ffde59;color: #002147;border-radius: 10px;">
+      <b>
+        <svg class="bi bi-bar-chart-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <rect width="4" height="5" x="1" y="10" rx="1"></rect>
+          <rect width="4" height="9" x="6" y="6" rx="1"></rect>
+          <rect width="4" height="14" x="11" y="1" rx="1"></rect>
+        </svg>
+        &nbsp;&nbsp;Today's View Count:&nbsp;&nbsp;
+        <?php session_start(); echo $_SESSION['counterNo']; ?>
+      </b>
+    </div>
+    </center>
+  </body>
 
 </html>
