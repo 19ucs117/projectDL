@@ -7,6 +7,10 @@ $(document).ready(function(e) {
     $(this).toggleClass('click');
     $('.main-nav').toggleClass('show');
   });
+  
+  $('.herfMenu').click(function(){    
+    $('.main-nav').toggleClass('show');
+  });
 
   $("#editProfile").click(function(){
     $(".Home").html("<p>EditProfile</p>");
