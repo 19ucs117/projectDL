@@ -77,33 +77,29 @@ $_SESSION['studImage'] = $row['Image'];
                   <br>
                 </a>
               </li>
-              <li><a href="Home.html" id="Home" target="right">Home</a></li>
+              <li><a class="herfMenu" href="Home.html" id="Home" target="right">Home</a></li>
               <li class="sub-menu"><a id="BookSearch">Book Search<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="AdvancedSearch.html" id="AdvancedSearch" target="right">Advanced Search</a></li>
-                  <li><a href="SimpleSearch.html" id="SimpleSearch" target="right">Simple Search</a></li>
+                  <li><a class="herfMenu" href="AdvancedSearch.html" id="AdvancedSearch" target="right">Advanced Search</a></li>
+                  <li><a class="herfMenu" href="SimpleSearch.html" id="SimpleSearch" target="right">Simple Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="Journals">Journals<span class="sub-arrow"></span></a>
                 <ul>
-
-                  <li><a href="JournalSearch.html" id="JournalSearch" target="right">Journal Search</a></li>
-
+                  <li><a class="herfMenu" href="JournalSearch.html" id="JournalSearch" target="right">Journal Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="PublicWebsites">Public Websites<span class="sub-arrow"></span></a>
                 <ul>
-
-                  <li><a href="PublicWebsitesSearch.html" id="PublicWebsitesSearch" target="right">Public Websites Search</a></li>
+                  <li><a class="herfMenu" href="PublicWebsitesSearch.html" id="PublicWebsitesSearch" target="right">Public Websites Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="Database">Database<span class="sub-arrow"></span></a>
                 <ul>
-
-                  <li><a href="DatabaseSearch.html" id="DatabaseSearch" target="right">Database Search</a></li>
+                  <li><a class="herfMenu" href="DatabaseSearch.html" id="DatabaseSearch" target="right">Database Search</a></li>
                 </ul>
               </li>
-              <li><a href="logout.php" id="Logout" onclick="return confirm('Do you want to logout ?')">Logout</a></li>
+              <li><a class="herfMenu" href="logout.php" id="Logout" onclick="return confirm('Do you want to logout ?')">Logout</a></li>
             </ul>
           </nav>
 
