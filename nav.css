@@ -91,12 +91,6 @@
     text-align: center;
 
   }
-  .btn.click{
-    left:260px;
-  }
-  .btn.click span::before{
-    content: '\f00d';
-  }
 
   .main-nav{
     width: 250px;
