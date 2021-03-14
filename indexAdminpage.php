@@ -77,56 +77,56 @@ $_SESSION['studImage'] = $row['Image'];
 
                 </a>
               </li>
-              <li><a href="Home.html" id="Home" target="right">Home</a></li>
+              <li><a class="herfMenu" href="Home.html" id="Home" target="right">Home</a></li>
               <li class="sub-menu"><a id="Admin">Admin<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="NewUserApproval.html" id="NewUserApproval" target="right">New User Approval</a></li>
-                  <li><a href="UserUpdate.html" id="UserUpdate" target="right">User Update</a></li>
-                  <li><a href="UserDelete.html" id="UserDelete" target="right">User Delete</a></li>
-                  <li><a href="DomainCreation.html" id="DomainCreation" target="right">Domain Creation</a></li>
-                  <li><a href="DomainUpdate.html" id="DomainUpdate" target="right">Domain Update</a></li>
-                  <li><a href="CollectionCreation.html" id="CollectionCreation" target="right">Collection Creation</a></li>
-                  <li><a href="CollectionUpdate.html" id="CollectionUpdate" target="right">Collection Update</a></li>
-                  <li><a href="NewEntryApproval.html" id="NewEntryApproval" target="right">New Entry Approval</a></li>
-                  <li><a href="DocumentUpdate.html" id="DocumentUpdate" target="right">Document Update</a></li>
-                  <li><a href="DocumentDelete.html" id="DocumentDelete" target="right">Document Delete</a></li>
+                  <li><a class="herfMenu" href="NewUserApproval.html" id="NewUserApproval" target="right">New User Approval</a></li>
+                  <li><a class="herfMenu" href="UserUpdate.html" id="UserUpdate" target="right">User Update</a></li>
+                  <li><a class="herfMenu" href="UserDelete.html" id="UserDelete" target="right">User Delete</a></li>
+                  <li><a class="herfMenu" href="DomainCreation.html" id="DomainCreation" target="right">Domain Creation</a></li>
+                  <li><a class="herfMenu" href="DomainUpdate.html" id="DomainUpdate" target="right">Domain Update</a></li>
+                  <li><a class="herfMenu" href="CollectionCreation.html" id="CollectionCreation" target="right">Collection Creation</a></li>
+                  <li><a class="herfMenu" href="CollectionUpdate.html" id="CollectionUpdate" target="right">Collection Update</a></li>
+                  <li><a class="herfMenu" href="NewEntryApproval.html" id="NewEntryApproval" target="right">New Entry Approval</a></li>
+                  <li><a class="herfMenu" href="DocumentUpdate.html" id="DocumentUpdate" target="right">Document Update</a></li>
+                  <li><a class="herfMenu" href="DocumentDelete.html" id="DocumentDelete" target="right">Document Delete</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="NewSubmission">New Submission<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="ResourceSubmission.html" id="ResourceSubmission" target="right">Resource Submission</a></li>
-                  <li><a href="ResourceEdit.html" id="ResourceEdit" target="right">Resource Edit</a></li>
+                  <li><a class="herfMenu" href="ResourceSubmission.html" id="ResourceSubmission" target="right">Resource Submission</a></li>
+                  <li><a class="herfMenu" href="ResourceEdit.html" id="ResourceEdit" target="right">Resource Edit</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="BookSearch">Book Search<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="NewArrivals.html" id="NewArrivals" target="right">New Arrivals</a></li>
-                  <li><a href="AdvancedSearch.html" id="AdvancedSearch" target="right">Advanced Search</a></li>
-                  <li><a href="SimpleSearch.html" id="SimpleSearch" target="right">Simple Search</a></li>
+                  <li><a class="herfMenu" href="NewArrivals.html" id="NewArrivals" target="right">New Arrivals</a></li>
+                  <li><a class="herfMenu" href="AdvancedSearch.html" id="AdvancedSearch" target="right">Advanced Search</a></li>
+                  <li><a class="herfMenu" href="SimpleSearch.html" id="SimpleSearch" target="right">Simple Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="Journals">Journals<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="JournalsEntry.html" id="JournalsEntry" target="right">Journal Entry</a></li>
-                  <li><a href="JournalsUpdate.html" id="JournalsUpdate" target="right">Journal Update</a></li>
-                  <li><a href="JournalSearch.html" id="JournalSearch" target="right">Journal Search</a></li>
+                  <li><a class="herfMenu" href="JournalsEntry.html" id="JournalsEntry" target="right">Journal Entry</a></li>
+                  <li><a class="herfMenu" href="JournalsUpdate.html" id="JournalsUpdate" target="right">Journal Update</a></li>
+                  <li><a class="herfMenu" href="JournalSearch.html" id="JournalSearch" target="right">Journal Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="PublicWebsites">Public Websites<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="PublicWebsitesEntry.html" id="PublicWebsitesEntry" target="right">Public Websites Entry</a></li>
-                  <li><a href="PublicWebsitesUpdate.html" id="PublicWebsitesUpdate" target="right">Public Websites Update</a></li>
-                  <li><a href="PublicWebsitesSearch.html" id="PublicWebsitesSearch" target="right">Public Websites Search</a></li>
+                  <li><a class="herfMenu" href="PublicWebsitesEntry.html" id="PublicWebsitesEntry" target="right">Public Websites Entry</a></li>
+                  <li><a class="herfMenu" href="PublicWebsitesUpdate.html" id="PublicWebsitesUpdate" target="right">Public Websites Update</a></li>
+                  <li><a class="herfMenu" href="PublicWebsitesSearch.html" id="PublicWebsitesSearch" target="right">Public Websites Search</a></li>
                 </ul>
               </li>
               <li class="sub-menu"><a id="Database">Database<span class="sub-arrow"></span></a>
                 <ul>
-                  <li><a href="DatabaseWebsitesEntry.html" id="DatabaseWebsitesEntry" target="right">Database Websites Entry</a></li>
-                  <li><a href="DatabaseWebsitesUpdate.html" id="DatabaseWebsitesUpdate" target="right">Database Websites Update</a></li>
-                  <li><a href="DatabaseSearch.html" id="DatabaseSearch" target="right">Database Search</a></li>
+                  <li><a class="herfMenu" href="DatabaseWebsitesEntry.html" id="DatabaseWebsitesEntry" target="right">Database Websites Entry</a></li>
+                  <li><a class="herfMenu" href="DatabaseWebsitesUpdate.html" id="DatabaseWebsitesUpdate" target="right">Database Websites Update</a></li>
+                  <li><a class="herfMenu" href="DatabaseSearch.html" id="DatabaseSearch" target="right">Database Search</a></li>
                 </ul>
               </li>
-              <li><a href="logout.php" id="Logout" onclick="return confirm('Do you want to logout ?')">Logout</a></li>
+              <li><a class="herfMenu" href="logout.php" id="Logout" onclick="return confirm('Do you want to logout ?')">Logout</a></li>
             </ul>
           </nav>
 
