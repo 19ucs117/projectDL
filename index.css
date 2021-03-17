@@ -74,6 +74,17 @@ nav ul a{
   color: white;
 }
 
+.logo{
+  height: 50px;
+  overflow: hidden;
+  justify-content: space-around;
+  width: 310px;
+  margin-left: -45px;
+  margin-top: -15px;
+  padding: 0;
+  background-color: #002567
+}
+
 
 #splash--scroller{
   background-color: #002567;
@@ -149,6 +160,9 @@ nav ul li a button:focus {
 }
 
 @media (max-width:600px) {
+  .logo{
+    margin-left: 50px;
+  }
   img{
     width: 100%;
     height: auto !important;
@@ -178,7 +192,7 @@ nav ul li a button:focus {
     font-weight: 500;
     margin-left: unset !important;
   }
-  
+
   .closeLi{
     height:0px;
     width:0px;
@@ -200,10 +214,19 @@ nav ul li a button:focus {
 
 
 }
+@media (max-width: 530px) {
+  .logo{
+    margin-left: 30px;
+  }
+}
 
 @media (max-width:500px) {
   button{
     display: none;
+  }
+
+  .logo{
+    margin-left: 25px;
   }
 
   body{
@@ -233,7 +256,7 @@ nav ul li a button:focus {
     align-items: center;
     position: unset !important;
   }
-  
+
   .closeLi{
     height:0px;
     width:0px;
@@ -249,5 +272,30 @@ nav ul li a button:focus {
   #loginForm{
     display: block;
   }
+}
 
+@media (max-width:480px) {
+  .logo{
+    margin-left: 15px;
+  }
+}
+@media (max-width:450px) {
+  .logo{
+    margin-left: 5px;
+  }
+}
+@media (max-width: 430px) {
+  .logo{
+    margin-left: -10px;
+  }
+}
+@media (max-width: 410px) {
+  .logo{
+    margin-left: -25px;
+  }
+}
+@media (max-width: 380px) {
+  .logo{
+    margin-left: -45px;
+  }
 }
