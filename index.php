@@ -118,7 +118,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     <nav class="main-nav">
       <ul class="menu">
         <li style="float: left">
-          <a href="https://www.loyolacollege.edu/" class="" rel="home" id="header--wordmark">
+          <a href="#" class="" rel="home" id="header--wordmark">
           <CENTER>  LOYOLA DIGITAL LIBRARY </CENTER>
           </a>
         </li>
