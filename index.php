@@ -98,6 +98,12 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
         }
       }
     });
+    function hover(x) {
+      x.style['background-color']="#202020"
+    }
+    function outhover(x) {
+      x.style="unset !important"
+    }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-N7ZGZZF5B1"></script>
@@ -125,7 +131,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
         <li id="" class="">
           <a href="https://www.loyolaalumni.org/">Alumni</a>
         </li> -->
-        <li>
+        <li onMouseOut="outhover(this)" onMouseOver="hover(this)">
           <a href="#">
             <button id="search-toggle" aria-expanded="true"  value="Login">
               Login
