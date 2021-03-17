@@ -119,7 +119,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
       <ul class="menu">
         <li style="float: left">
           <a href="https://www.loyolacollege.edu/" class="" rel="home" id="header--wordmark">
-            <div class="logo" style="height: 50px;overflow: hidden;justify-content: space-around; width: 400px;margin-left: -75px;margin-top: -15px;padding: 0;background-color: #002567">
+            <div class="logo" style="height: 50px;overflow: hidden;justify-content: space-around; width: 340px;margin-left: -75px;margin-top: -15px;padding: 0;background-color: #002567">
               <center>
               <img style="height: 50px !important;display: inline-block; width: auto !important;" src="logo.jpg" alt="logo image missing">
               <label style="display: inline-block;margin-top: 15px;" for="img">LOYOLA DIGITAL LIBRARY</label>
