@@ -136,7 +136,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
         <li id="" class="">
           <a href="https://www.loyolaalumni.org/">Alumni</a>
         </li> -->
-        <li onMouseOut="outhover(this)" onMouseOver="hover(this)">
+        <li class="closeLi" onMouseOut="outhover(this)" onMouseOver="hover(this)">
           <a href="#">
             <button id="search-toggle" aria-expanded="true"  value="Login">
               Login
