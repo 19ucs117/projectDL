@@ -69,6 +69,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOYOLA DIGITAL LIBRARY</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://iqac.loyolacollege.edu/academic/assets/img/favicon.png">
     <link rel="stylesheet" href="index.css">
