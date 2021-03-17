@@ -73,12 +73,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     <link rel="shortcut icon" type="image/x-icon" href="https://iqac.loyolacollege.edu/academic/assets/img/favicon.png">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="dashforge-iso.css">
-    <script src="fontawesome.js"></script>
-    <script>
-      $(window).on("load",function(){
-        $(".loader").fadeOut("slow");
-      });
-    </script>
+    <script src="fontawesome.js"></script> 
     <script type="text/javascript">
     document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('#search-toggle').onclick = showDiv;
