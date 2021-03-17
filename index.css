@@ -178,6 +178,13 @@ nav ul li a button:focus {
     font-weight: 500;
     margin-left: unset !important;
   }
+  
+  .closeLi{
+    height:0px;
+    width:0px;
+    margin:0px;
+    display:none;
+  }
 
   body{
     background-color: #696969;
@@ -225,6 +232,13 @@ nav ul li a button:focus {
     display: block;
     align-items: center;
     position: unset !important;
+  }
+  
+  .closeLi{
+    height:0px;
+    width:0px;
+    margin:0px;
+    display:none;
   }
 
   .bootstrap-iso .tx-light {
