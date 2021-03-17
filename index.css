@@ -1,0 +1,234 @@
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  align-content: space-between;
+}
+
+.bootstrap-iso .tx-light {
+  font-weight: 500;
+  margin-left: -330px;
+}
+
+.bootstrap-iso .wd-100p {
+  width: 400px;
+  margin-left: 40%;
+}
+
+nav{
+  background-color: #002567;
+  width: 100%;
+  height: 50px;
+  margin-top: -1%;
+}
+img{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  vertical-align: top;
+  width: 100%;
+  height: auto !important;
+}
+
+
+nav ul{
+  list-style: none;
+
+}
+nav ul li{
+  display: inline-block;
+  padding: 15px;
+  font-size: 20px;
+  float: right;
+
+}
+nav ul a{
+  text-decoration: none;
+  color: white;
+}
+
+
+#splash--scroller{
+  background-color: #002567;
+  font-weight: 400;
+  padding: 20px;
+  align-content: center;
+  font-size: 30px;
+  vertical-align: bottom;
+  height: auto;
+  margin-top: 20px;
+  display: none;
+}
+
+#splash--scroller a{
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+nav ul li a button:focus {
+  outline: none;
+}
+
+.main-nav .menu #search-toggle{
+  border: none;
+  border-color: black;
+  font-size: 20px;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+#loginForm{
+  align-content: space-between;
+  vertical-align: middle;
+  width: auto;
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (min-width:960px) {
+  img{
+    width: 100%;
+    height: 90% !important;
+  }
+
+}
+@media (max-width:700px) {
+  img{
+    width: 100%;
+    height: 90% !important;
+  }
+
+  .bootstrap-iso .wd-100p {
+    width: 400px;
+    margin-left: 20%;
+  }
+
+}
+
+@media (max-width:650px) {
+  img{
+    width: 100%;
+    height: 90% !important;
+  }
+
+  .bootstrap-iso .wd-100p {
+    width: 400px;
+    margin-left: 10%;
+  }
+
+}
+
+@media (max-width:600px) {
+  img{
+    width: 100%;
+    height: auto !important;
+  }
+
+  button{
+    display: none;
+  }
+
+  .bg-text{
+    background: none;
+    border: 0px;
+    display: block;
+    align-items: center;
+    position: unset !important;
+    top: unset !important;
+    left: unset !important;
+    transform: unset !important;
+    z-index: unset !important;
+    width: unset !important;
+    padding: 20px;
+    text-align: unset !important;
+    align-content: space-between;
+  }
+
+  .bootstrap-iso .tx-light {
+    font-weight: 500;
+    margin-left: unset !important;
+  }
+
+  body{
+    background-color: #696969;
+  }
+
+  .bg-image{
+    filter: none;
+  }
+
+  #loginForm{
+    display: block;
+  }
+
+
+}
+
+@media (max-width:500px) {
+  button{
+    display: none;
+  }
+
+  body{
+    background-color: #696969;
+  }
+
+
+  .bootstrap-iso .wd-100p {
+    width: 100%;
+    height: 100%;
+    margin-left: unset !important;
+  }
+
+  img{
+    width: 100%;
+    height: auto !important;
+  }
+
+  .bg-image{
+    filter: none;
+  }
+
+  .bg-text{
+    background: none;
+    border: 0px;
+    display: block;
+    align-items: center;
+    position: unset !important;
+  }
+
+  .bootstrap-iso .tx-light {
+    font-weight: 500;
+    margin-left: unset !important;
+  }
+
+  #loginForm{
+    display: block;
+  }
+
+}
