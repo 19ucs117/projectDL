@@ -170,7 +170,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
                     <div class="form-group">
                       <div class="d-flex justify-content-between mg-b-5">
                         <label class="mg-b-0-f" style="color: white;">Password</label>
-                        <a href="forget_password" class="tx-13 tx-white">
+                        <a href="reset.html" class="tx-13 tx-white">
                           <i class="fas fa-lock"></i>&nbsp;&nbsp;&nbsp;&nbsp; Reset Password
                         </a>
                       </div>
