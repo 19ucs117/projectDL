@@ -55,7 +55,7 @@ $_SESSION['studImage'] = $row['Image'];
         <nav class="main-nav">
             <ul class="main-nav-ul">
               <li>
-                <a href="#" class="hrefMenu">
+                <a href="#" class="herfMenu">
                   <center>
                     <img src="<?php session_start(); echo $_SESSION['studImage']; ?>" style="height: auto;max-width: 100%;width: 100px;width: 100px !important;min-height: 100px;height: 100px;border-radius: 50% !important; margin-left:-30px;" alt="Workplace" usemap="#workmap">
                     <map name="workmap">
