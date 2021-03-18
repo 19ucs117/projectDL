@@ -60,7 +60,7 @@ $_SESSION['studImage'] = $row['Image'];
         <nav class="main-nav">
             <ul class="main-nav-ul">
               <li>
-                <a href="#">
+                <a href="#" class="hrefMenu">
                   <img  src="user-icon.png" alt="Workplace" usemap="#workmap" width="80" height="80"/>
                   <map name="workmap">
                     <area shape="circle" coords="40,40,38" alt="ImageFile" id="editProfile" href="editProfile.php" target="right">
