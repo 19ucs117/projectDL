@@ -79,8 +79,9 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
     document.addEventListener('DOMContentLoaded', function () {
       document.querySelector('#search-toggle').onclick = showDiv;
       function showDiv() {
+        var a,b;
         if (document.querySelector('#search-toggle').onclick) {
-          var a = document.querySelector('.bg-text').style.display = "block";
+          a = document.querySelector('.bg-text').style.display = "block";
           if (a) {
             b = document.querySelector('#search-toggle').innerHTML="&#10005;&nbsp;Close";
             document.querySelector('.bg-image').style.filter = "blur(8px)";
