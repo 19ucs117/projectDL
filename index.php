@@ -178,7 +178,7 @@ if (isset($_POST['uname']) && isset($_POST['pswd'])) {
 
                       <input type="password" name="pswd" autocomplete="off" class="form-control input-field" placeholder="********" style="background-color: #21201f;color: white" required="">&nbsp;
                     </div>
-                    <button type="submit" name="commit" class="btn btn-block" style="background-color: #01c8ee;">
+                    <button type="submit" name="commit" id="loginAlert" class="btn btn-block" style="background-color: #01c8ee;">
                       <span class="tx-bold">Sign In</span>
                     </button>
                   </form>
